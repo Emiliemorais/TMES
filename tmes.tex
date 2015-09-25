@@ -1,0 +1,38 @@
+\input{fixos/pacotes}
+\input{fixos/comandos}
+\input{fixos/novosComandos}
+
+\input{editaveis/informacoes}
+\input{fixos/informacoes}
+\input{fixos/setup}
+
+\usepackage{float}
+
+\begin{document}
+
+\frenchspacing
+\imprimircapa
+\imprimirfolhaderosto*
+
+\input{fixos/listasAutomaticas}
+\pagebreak
+\input{fixos/indiceAutomatico}
+
+\textual
+
+\input{editaveis/introducao}
+\input{editaveis/apresentacao}
+\input{editaveis/contagens}
+
+\bookmarksetup{startatroot}
+
+\postextual
+
+
+\bibliography{bibliografia}{}
+% \input{editaveis/secoes/apendices}
+% \input{editaveis/secoes/anexos}
+\printindex
+% \nocite{traceclouda, caliber, tracecloudb}
+\end{document}
+
