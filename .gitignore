@@ -38,5 +38,5 @@ pi1.bcf
 *.backup
 *.pdf
 *.swp
-
+*.kate-swp
 
