@@ -1,0 +1,142 @@
+\subsection{Documentação utilizada}
+
+\begin{itemize}
+ \item Especificações de Caso de Uso;
+ \item Regras de negócio;
+ \item Proposta de Especificação do Software;
+\end{itemize}
+
+
+\subsection{Participantes, seus papéis e qualificações}
+
+\subsection{Data}
+26/09/2015
+
+\subsection{Funções de Dados}
+
+\begin{table*}[!h]
+\centering
+\caption{Informações sobre as funções de dados}
+\label{Rotulo}
+  \begin{tabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.14\linewidth}|p{0.14\linewidth}|p{0.17\linewidth}|p{0.10\linewidth}|}
+  \hline
+  \textbf{Função} & \textbf{Tipo} & \textbf{Quantidade de RLR} & \textbf{Quantidade de DER} & \textbf{Complexidade} & \textbf{Pontos de função} \\
+    \hline
+  Usuário & ALI & & &  & \\
+  \hline
+  Projeto & ALI & & &  & \\
+  \hline
+  Subprojeto & ALI & &  & & \\
+  \hline
+  Relatório & ALI & &  & & \\
+  \hline
+  \end{tabular}
+\end{table*}
+
+\pagebreak
+\subsection{Funções de Transação}
+
+\begin{table*}[!h]
+\centering
+\caption{Informações sobre as funções de transação}
+\label{Rotulo}
+  \begin{tabular}{p{0.20\linewidth}p{0.10\linewidth}p{0.14\linewidth}p{0.14\linewidth}p{0.17\linewidth}p{0.10\linewidth}}
+\hline
+\textbf{Função} & \textbf{Tipo} & \textbf{Quantidade de ALR} & \textbf{Quantidade de DER} & \textbf{Complexidade} & \textbf{Pontos de função} \\
+\hline
+Listar projetos & CE & 1 & 5 & Baixa & 3 \\
+\hline
+Upload Portaria de Habilitação & EE & 1 & 6 & Baixa & 3 \\
+\hline
+Submeter Relatório Parcial & EE & 1 & 11 & Baixa & 3 \\
+\hline
+Visualizar Relatório Parcial & CE & 1 & 7 & Baixa & 3 \\
+\hline
+Cadastrar Relatório Final & EE & 2 & 14 & Média & 4 \\
+\hline
+Alterar Relatório Final & EE & 2 & 14 & Média & 4 \\
+\hline
+Visualizar Relatório Final & CE & 1 & 13 & Baixa & 3 \\
+\hline
+Submeter Relatório Final &  &  &  &  &  \\
+\hline
+Visualizar Portaria de habilitação & CE & 1 & 5 & Baixa & 3 \\
+\hline
+Listar projetos aprovados & CE & 1 & 11 & Baixa & 3 \\
+\hline
+Visualizar informações de habilitação e histórico de relatórios & CE & 1 & 6 & Baixa & 3 \\
+\hline
+Aceitar Relatorio Parcial & EE & 1 & 3 & Baixa & 3 \\
+\hline
+Recusar Relatório parcial & EE & 1 & 3 & Baixa & 3\\
+\end{tabular}
+\end{table*}
+
+\pagebreak
+  \label{Rotulo}
+%   \caption{Informações sobre os DERs e os ALRs}
+\begin{longtable}{p{0.20\linewidth}p{0.20\linewidth}p{0.50\linewidth}}
+  \hline
+  \textbf{Função} & \textbf{ALRs} & \textbf{DERs} \\
+   \hline
+    Listar projetos&	Projeto&	ID, Nome do projeto, PJ titular do projeto, Versão válida, Situação do projeto e Capacidade de iniciar ação\\
+
+    \hline
+    Upload Portaria de Habilitação&	    Projeto &	Data da portaria, Data de publicação, Nº da portaria, Portaria de habilitação, Capacidade de iniciar ação e Capacidade de emitir mensagem \\
+
+    \hline
+    Submeter Relatório Parcial&	Relatório&	Houve execução física e/ou financeira do projeto?, Não alterado, Desenho esquemático, Subprojeto, Houve execução física e/ou financeira do
+    Subprojeto?,Planilha de execução físico-financeira, Informações georreferenciadas, Outros, Projeto como executado, Capacidade de iniciar ação e Capacidade de emitir mensagem\\
+    \hline
+    Visualizar Relatório Parcial&	Relatório&	Desenho esquemático, Subprojeto, Planilha de execução físico-financeira, Informações georreferenciadas, Outros, Projeto como executado, Capacidade de 
+    iniciar ação\\
+    \hline
+    Cadastrar Relatório Final e Alterar Relatório Final&	Relatório e Subprojeto&	Descrição final do projeto, Data de conclusão do projeto, Desenho esquemático, Subprojeto, Descrição final do subprojeto, Benefícios alcançados,
+    Data de conclusão do subprojeto, Planilha de execução físico-financeira, Informações georreferenciadas, Notas fiscais, Outros, Item, Nome, Capacidade de iniciar ação e Capacidade de emitir mensagem\\
+
+    \hline
+    Visualizar Relatório Parcial&	Relatório&	Descrição final do projeto, Data de conclusão do projeto, Desenho esquemático, Subprojeto, Descrição final do subprojeto, Benefícios alcançados, Data de 
+    conclusão do subprojeto, Planilha de execução físico-financeira, Informações georreferenciadas, Notas fiscais, Outros, Item, Nome, Capacidade de iniciar ação \\
+    \hline
+    Visualizar Portaria de habilitação&	    Projeto &	Data da portaria, Data de publicação, Nº da portaria, Portaria de habilitação e Capacidade de iniciar ação\\
+
+    \hline
+    Listar projetos aprovados&	Projeto&	Campo de pesquisa, id,novo evento,  projeto, acompanhamento, Pj titular do projeto, Data de Submissão, Data de protocolo, Situação, É consórcio e Capacidade de iniciar ação\\
+    \hline
+    Visualizar informações de habilitação e histórico de relatórios&	Relatório&	"Relatório, Data limite de submissão, Data de submissão, Ação, Situação e Capacidade de iniciar ação"\\
+
+    \hline
+    Aceitar Relatorio Parcial&	Relatório&	Situação, Capacidade de iniciar ação e capacidade de emitir mensagem\\
+
+    \hline
+    Recusar Relatório parcial&	Relatório&	Situação, Capacidade de iniciar ação e capacidade de emitir mensagem\\
+    \hline
+ \end{longtable}
+
+
+\pagebreak
+\subsection{Resultado da contagem}
+
+\begin{table*}[!h]
+\centering
+\caption{Pontos de Função}
+\label{Rotulo}
+  \begin{tabular}{|p{0.20\linewidth}|p{0.25\linewidth}|p{0.20\linewidth}|}
+  \hline
+  \textbf{Funções de Dados} & \textbf{Funções de Transação} & \textbf{Total} \\ 
+  \hline
+ 
+  \end{tabular}
+\end{table*}
+
+\pagebreak
+\subsection{Suposições e observações}
+
+  \begin{itemize}
+   \item Para a função 'Upload Portaria de Habilitação' foi suposto que os dados são salvos no ALI Projeto;
+   \item A funcionalidade de 'Exportar PDF' não foi contada por ser apenas uma outra forma de visualização do Relatório, a qual já foi contado
+   no processo 'Visualizar Relatório Final';
+   \item A funcionalidade de 'Download portaria de habilitação' não foi contada por ser apenas uma outra forma de visualização da portaria, a qual
+   já foi contada no processo 'Visualizar Portaria de habilitação';
+  \end{itemize}
+
