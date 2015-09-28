@@ -60,8 +60,6 @@ pontuação dos mesmos na contagem realizada.
 	\hline
 	Subprojeto & ALI & &  & & \\
 	\hline
-	Histórico do projeto & ALI & & & &\\
-	\hline
 	Relatório & ALI & &  & & \\
 	\hline
 	\end{tabular}
@@ -72,7 +70,55 @@ pontuação dos mesmos na contagem realizada.
 \section{Funções de Transação}
   
   Esta seção apresenta as funções de transação identificadas, bem como suas classificações e pontuação na contagem realizada.
+    
+  \subsection{SE - Visualizar Relatório de Acompanhamento das Atividades do Projeto}
   
+    Este processo elementar foi classificado como Saída Externa porque, segundo a Regra de Negócio RN63, neste relatório
+    deve conter a quantidade de projetos por situação, que é calculada na hora de gerar o relatório.
+    
+      \begin{table}[!h]
+      \centering
+      \caption{SE - Visualizar Relatório de Acompanhamento das Atividades do Projeto}
+      \label{se_visualizar_relatorio_acompanhamento}
+      \begin{tabular}{|c|l|c|}
+      \hline
+      \multicolumn{3}{|c|}{SE - Visualizar Relatório de Acompanhamento das Atividades do Projeto} \\ \hline
+      ALR                              & \multicolumn{1}{c|}{DER's}       & Total                 \\ \hline
+      \multirow{2}{*}{Projeto}         & Situação                         & 1                     \\ \cline{2-3} 
+				      & Data de submissão                & 1                     \\ \hline
+      Usuário                          & Nome do analista responsável     & 1                     \\ \hline
+      \multirow{4}{*}{DERs extras}     & Capacidade de iniciar ação       & \multirow{4}{*}{4}    \\ \cline{2-2}
+				      & Mensagem de erro                 &                       \\ \cline{2-2}
+				      & Data inicial                     &                       \\ \cline{2-2}
+				      & Data final                       &                       \\ \hline
+      \multicolumn{2}{|c|}{\textbf{TOTAL DE DER's}}                       & \textbf{7}            \\ \hline
+      \end{tabular}
+      \end{table}
+      
+  \subsection{SE - Visualizar Relatório de Acompanhamento das Atividades por Analista}
+      
+      Este processo elementar foi classificado como Saída Externa porque, segundo a Regra de Negócio RN63, neste relatório
+    deve conter a quantidade de projetos por situação, que é calculada na hora de gerar o relatório.
+      
+      \begin{table}[!h]
+      \centering
+      \caption{SE - Visualizar Relatório de Acompanhamento das Atividades por Analista}
+      \label{se_visualizar_relatorio_acompanhamento_analista}
+      \begin{tabular}{|c|l|c|}
+      \hline
+      \multicolumn{3}{|c|}{SE - Visualizar Relatório de Acompanhamento das Atividades por Analista} \\ \hline
+      ALR                               & \multicolumn{1}{c|}{DER's}       & Total                  \\ \hline
+      Projeto                           & Situação                         & 1                      \\ \hline
+      Usuário                           & Nome do analista responsável     & 1                      \\ \hline
+      \multirow{3}{*}{DERs extras}      & Capacidade de iniciar ação       & \multirow{3}{*}{3}     \\ \cline{2-2}
+					& Mensagem de erro                 &                        \\ \cline{2-2}
+					& Total de projetos                &                        \\ \hline
+      \textbf{TOTAL DE DER's}           &                                  & \textbf{5}             \\ \hline
+      \end{tabular}
+      \end{table}
+  
+  \vfill
+  \pagebreak
   \subsection{CE - Listar projeto}
   
       \begin{table}[!h]
@@ -222,11 +268,22 @@ pontuação dos mesmos na contagem realizada.
 
   \begin{itemize}
    \item Para a função 'Upload Portaria de Habilitação' foi suposto que os dados são salvos no ALI Projeto;
+   
    \item A funcionalidade de 'Exportar PDF' não foi contada por ser apenas uma outra forma de visualização do Relatório, a qual já foi contado
    no processo 'Visualizar Relatório Final';
+   
    \item A funcionalidade de 'Download portaria de habilitação' não foi contada por ser apenas uma outra forma de visualização da portaria, a qual
    já foi contada no processo 'Visualizar Portaria de habilitação';
+   
    \item Assumiu-se que o ID do projeto tem valor significativo para o usuário, pois no protótipo de tela contido na documentação o ID não 
     parecia ser um número aleatório. Tal assunção impactou na contagem do ALI Projeto;
+   
+   \item Para a contagem do processo elementar SE - Visualizar Relatório de Acompanhamento das Atividades do Projeto
+    (Tabela \ref{se_visualizar_relatorio_acompanhamento}) considerou-se que a data de referência para o filtro seria a Data de submissão;
+    
+   \item A funcionalidade "Gerar PDF" no caso de uso UC20 não foi contada por ser apenas uma outra forma de visualização do Relatório gerado
+     pelos processos elementares SE - Visualizar Relatório de Acompanhamento das Atividades por Analista e 
+     SE - Visualizar Relatório de Acompanhamento das Atividades do Projeto
+     (Tabelas \ref{se_visualizar_relatorio_acompanhamento_analista} e \ref{se_visualizar_relatorio_acompanhamento});
   \end{itemize}
 
