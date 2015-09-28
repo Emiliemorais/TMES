@@ -119,15 +119,15 @@ pontuação dos mesmos na contagem realizada.
   
   \vfill
   \pagebreak
-  \subsection{CE - Listar projeto}
+  \subsection{CE - Visualizar projetos}
   
       \begin{table}[!h]
       \centering
-      \caption{CE - Listar projeto}
-      \label{ce_listar_projeto}
+      \caption{CE - Visualizar projetos}
+      \label{ce_visualizar_projetos}
       \begin{tabular}{|c|l|c|}
       \hline
-      \multicolumn{3}{|c|}{CE - Listar Projeto}                                                              \\ \hline
+      \multicolumn{3}{|c|}{CE - Visualizar Projetos}                                                              \\ \hline
       ALR                                                & \multicolumn{1}{c|}{DER's}   & Total              \\ \hline
       \multirow{7}{*}{Projeto}                           & ID do projeto                & \multirow{7}{*}{7} \\ \cline{2-2}
 							& Nome do projeto              &                    \\ \cline{2-2}
@@ -138,33 +138,70 @@ pontuação dos mesmos na contagem realizada.
 							& É consórcio                  &                    \\ \hline
       Usuário                                            & Nome do analista responsável & 1                  \\ \hline
       \multicolumn{1}{|l|}{\multirow{2}{*}{DERs extras}} & Capacidade de iniciar ação   & \multirow{2}{*}{2} \\ \cline{2-2}
-      \multicolumn{1}{|l|}{}                             & Mensagem de erro             &                    \\ \hline
+      \multicolumn{1}{|l|}{}                             & Filtro de pesquisa             &                    \\ \hline
       \multicolumn{2}{|c|}{\textbf{TOTAL DE DER's}}                                     & \textbf{10}        \\ \hline
       \end{tabular}
       \end{table}
-  
-  \subsection{CE - Emitir Relatório de Relação de Projeto}
-    
+      
+   \subsection{CE - Detalhar projeto}
+   
       \begin{table}[!h]
-	\centering
-	\caption{CE - Emitir Relatório de Relação de Projeto}
-	\label{ce_emitir_relatorio_projeto}
-	\begin{tabular}{|c|l|c|}
-	\hline
-	\multicolumn{3}{|c|}{CE - Emitir Relatório de Relação de Projeto}                                      \\ \hline
-	ALR                                                & \multicolumn{1}{c|}{DER's}   & Total              \\ \hline
-	\multirow{6}{*}{Projeto}                           & ID do projeto                & \multirow{6}{*}{6} \\ \cline{2-2}
-							  & Nome do projeto              &                    \\ \cline{2-2}
-							  & Titular do projeto (PJ)      &                    \\ \cline{2-2}
-							  & Data de submissão            &                    \\ \cline{2-2}
-							  & Data de protocolo            &                    \\ \cline{2-2}
-							  & Situação                     &                    \\ \hline
-	Usuário                                            & Nome do analista responsável & 1                  \\ \hline
-	\multicolumn{1}{|l|}{\multirow{2}{*}{DERs extras}} & Capacidade de iniciar ação   & \multirow{2}{*}{2} \\ \cline{2-2}
-	\multicolumn{1}{|l|}{}                             & Mensagem de erro             &                    \\ \hline
-	\multicolumn{2}{|c|}{\textbf{TOTAL DE DER's}}                                     & \textbf{9}         \\ \hline
-	\end{tabular}
-	\end{table}
+      \centering
+      \caption{CE - Detalhar projeto}
+      \label{ce_detalhar_projeto}
+      \begin{tabular}{|c|l|c|}
+      \hline
+      \multicolumn{3}{|c|}{CE - Detalhar Projeto}                                  \\ \hline
+      ALR                      & \multicolumn{1}{c|}{DER's}   & Total              \\ \hline
+      \multirow{6}{*}{Projeto} & ID do projeto                & \multirow{6}{*}{6} \\ \cline{2-2}
+			      & Situação                     &                    \\ \cline{2-2}
+			      & Número da Versão             &                    \\ \cline{2-2}
+			      & Data e hora                  &                    \\ \cline{2-2}
+			      & Tipo de validação            &                    \\ \cline{2-2}
+			      & Responsável pela versão      &                    \\ \hline
+      Usuário                  & Nome do analista responsável & 1                  \\ \hline
+      DERs extras              & Capacidade de iniciar ação   & 1                  \\ \hline
+      \multicolumn{2}{|c|}{\textbf{TOTAL DE DER's}}           & \textbf{8}         \\ \hline
+      \end{tabular}
+      \end{table}
+      
+   \subsection{EE - Validar versão do projeto}
+   
+      \begin{table}[!h]
+      \centering
+      \caption{EE - Validar versão do projeto}
+      \label{ee_validar_versao_projeto}
+      \begin{tabular}{|c|l|c|}
+      \hline
+      \multicolumn{3}{|c|}{EE - Validar versão do projeto}                        \\ \hline
+      ALR                      & \multicolumn{1}{c|}{DER's}  & Total              \\ \hline
+      \multirow{4}{*}{Projeto} & Número da Versão            & \multirow{4}{*}{4} \\ \cline{2-2}
+			      & Data e hora                 &                    \\ \cline{2-2}
+			      & Tipo de validação da versão &                    \\ \cline{2-2}
+			      & Situação                    &                    \\ \hline
+      DERs extras              & Capacidade de iniciar ação  & 1                  \\ \hline
+      \multicolumn{2}{|c|}{\textbf{TOTAL DE DER's}}          & \textbf{5}         \\ \hline
+      \end{tabular}
+      \end{table}
+   
+   \subsection{EE - Recusar versão do projeto}
+   
+      \begin{table}[!h]
+      \centering
+      \caption{EE - Recusar versão do projeto}
+      \label{ee_resusar_versao_projeto}
+      \begin{tabular}{|c|l|c|}
+      \hline
+      \multicolumn{3}{|c|}{EE - Recusar versão do projeto}                        \\ \hline
+      ALR                      & \multicolumn{1}{c|}{DER's}  & Total              \\ \hline
+      \multirow{4}{*}{Projeto} & Número da Versão            & \multirow{4}{*}{4} \\ \cline{2-2}
+			      & Data e hora                 &                    \\ \cline{2-2}
+			      & Tipo de validação da versão &                    \\ \cline{2-2}
+			      & Situação                    &                    \\ \hline
+      DERs extras              & Capacidade de iniciar ação  & 1                  \\ \hline
+      \multicolumn{2}{|c|}{\textbf{TOTAL DE DER's}}          & \textbf{5}         \\ \hline
+      \end{tabular}
+      \end{table}
   
    \subsection{Pontuação das funções de transação}
    
@@ -278,6 +315,9 @@ pontuação dos mesmos na contagem realizada.
    \item Assumiu-se que o ID do projeto tem valor significativo para o usuário, pois no protótipo de tela contido na documentação o ID não 
     parecia ser um número aleatório. Tal assunção impactou na contagem do ALI Projeto;
    
+   \item O fluxo alternativo A1 do UC21, responsável por emitir o relatório de relação de projetos, não foi contado por ser apenas outra forma
+    de visualização dos dados dos projetos, já contado no processo elementar CE - Visualizar Projetos (Tabela \ref{ce_visualizar_projetos});
+   
    \item Para a contagem do processo elementar SE - Visualizar Relatório de Acompanhamento das Atividades do Projeto
     (Tabela \ref{se_visualizar_relatorio_acompanhamento}) considerou-se que a data de referência para o filtro seria a Data de submissão;
     
@@ -285,5 +325,14 @@ pontuação dos mesmos na contagem realizada.
      pelos processos elementares SE - Visualizar Relatório de Acompanhamento das Atividades por Analista e 
      SE - Visualizar Relatório de Acompanhamento das Atividades do Projeto
      (Tabelas \ref{se_visualizar_relatorio_acompanhamento_analista} e \ref{se_visualizar_relatorio_acompanhamento});
+     
+   \item Para a contagem do processo elementar CE - Detalhar projeto (Tabela \ref{ce_detalhar_projeto}), por falta de informações na documentação,
+     foi considerado que ao acionar este processo serão apresentados apenas os dados da versão do projeto mais o ID do projeto, e que não há 
+     mensagens de erros;
+     
+   \item Os processos elementares EE - Validar versão do projeto e EE - Recusar versão do projeto 
+    (Tabelas \ref{ee_validar_versao_projeto} e \ref{ee_resusar_versao_projeto}) foram descritos superficialmente por falta de informações
+    na documentação disponível, considerando apenas que os processos atualizam a versão do projeto, a data e hora da versão e o tipo 
+    de validação. A situação do projeto é usada com filtro de pesquisa;
   \end{itemize}
 
