@@ -14,19 +14,47 @@
 
 \section{Funções de Dados}
 
+Foram identificados os seguintes Arquivos Lógicos Internos (ALI):
+
+\begin{table}[]
+\centering
+\caption{ALI - Projeto}
+\label{ali_projeto}
+\begin{tabular}{|c|c|l|}
+\hline
+\multicolumn{3}{|c|}{\textbf{ALI - Projeto}}                                                      \\ \hline
+\multicolumn{1}{|l|}{RLR's} & Tipo                         & \multicolumn{1}{c|}{DER's}  \\ \hline
+\multirow{8}{*}{1}          & \multirow{8}{*}{Obrigatório} & ID do projeto               \\ \cline{3-3} 
+                            &                              & Nome do projeto             \\ \cline{3-3} 
+                            &                              & Titular do projeto (PJ)     \\ \cline{3-3} 
+                            &                              & Data de submissão           \\ \cline{3-3} 
+                            &                              & Data de protocolo           \\ \cline{3-3} 
+                            &                              & Situação                    \\ \cline{3-3} 
+                            &                              & É consórcio                 \\ \cline{3-3} 
+                            &                              & Responsável pelo projeto    \\ \hline
+\multirow{4}{*}{2}        & \multirow{4}{*}{Obrigatório} & Número da versão do projeto \\ \cline{3-3} 
+                            &                              & Data e hora da versão       \\ \cline{3-3} 
+                            &                              & Tipo de validação da versão \\ \cline{3-3} 
+                            &                              & Responsável pela versão     \\ \hline
+\end{tabular}
+\end{table}
+
+
 \begin{table*}[!h]
 \centering
 \caption{Informações sobre as funções de dados}
-\label{Rotulo}
-  \begin{tabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.14\linewidth}|p{0.14\linewidth}|p{0.17\linewidth}|p{0.10\linewidth}|}
+\label{funcoes_dados}
+  \begin{tabular}{|p{0.12\linewidth}|p{0.10\linewidth}|p{0.14\linewidth}|p{0.14\linewidth}|p{0.17\linewidth}|p{0.10\linewidth}|}
   \hline
-  \textbf{Função} & \textbf{Tipo} & \textbf{Quantidade de RLR} & \textbf{Quantidade de DER} & \textbf{Complexidade} & \textbf{Pontos de função} \\
+  \textbf{Função} & \textbf{Tipo} & \textbf{Quantidade de RLR} & \textbf{Quantidade de DER} & \textbf{Complexidade} & \textbf{Pontos de função (PF)} \\
     \hline
-  Usuário & ALI & & &  & \\
+  Usuário & ALI & 1 &  &  & \\
   \hline
-  Projeto & ALI & & &  & \\
+  Projeto & ALI & 2 & 12 & Baixa & 5 \\
   \hline
   Subprojeto & ALI & &  & & \\
+  \hline
+  Histórico do projeto & ALI & & & &\\
   \hline
   Relatório & ALI & &  & & \\
   \hline
@@ -40,7 +68,7 @@
 \begin{table*}[!h]
 \centering
 \caption{Informações sobre as funções de transação}
-\label{Rotulo}
+\label{funcoes_transacao}
   \begin{tabular}{p{0.20\linewidth}p{0.10\linewidth}p{0.14\linewidth}p{0.14\linewidth}p{0.17\linewidth}p{0.10\linewidth}}
 \hline
 \textbf{Função} & \textbf{Tipo} & \textbf{Quantidade de ALR} & \textbf{Quantidade de DER} & \textbf{Complexidade} & \textbf{Pontos de função} \\
@@ -73,9 +101,9 @@ Recusar Relatório parcial & EE & 1 & 3 & Baixa & 3\\
 \end{tabular}
 \end{table*}
 
+\vfill
 \pagebreak
-  \label{Rotulo}
-%   \caption{Informações sobre os DERs e os ALRs}
+\label{der_alr_info}
 \begin{longtable}{p{0.20\linewidth}p{0.20\linewidth}p{0.50\linewidth}}
   \hline
   \textbf{Função} & \textbf{ALRs} & \textbf{DERs} \\
@@ -112,6 +140,7 @@ Recusar Relatório parcial & EE & 1 & 3 & Baixa & 3\\
     \hline
     Recusar Relatório parcial&	Relatório&	Situação, Capacidade de iniciar ação e capacidade de emitir mensagem\\
     \hline
+\caption{Informações sobre os DERs e os ALRs}
  \end{longtable}
 
 
@@ -121,7 +150,7 @@ Recusar Relatório parcial & EE & 1 & 3 & Baixa & 3\\
 \begin{table*}[!h]
 \centering
 \caption{Pontos de Função}
-\label{Rotulo}
+\label{resultado_contagem}
   \begin{tabular}{|p{0.20\linewidth}|p{0.25\linewidth}|p{0.20\linewidth}|}
   \hline
   \textbf{Funções de Dados} & \textbf{Funções de Transação} & \textbf{Total} \\ 
@@ -139,5 +168,7 @@ Recusar Relatório parcial & EE & 1 & 3 & Baixa & 3\\
    no processo 'Visualizar Relatório Final';
    \item A funcionalidade de 'Download portaria de habilitação' não foi contada por ser apenas uma outra forma de visualização da portaria, a qual
    já foi contada no processo 'Visualizar Portaria de habilitação';
+   \item Assumiu-se que o ID do projeto tem valor significativo para o usuário, pois no protótipo de tela contido na documentação o ID não 
+    parecia ser um número aleatório. Tal assunção impactou na contagem do ALI Projeto;
   \end{itemize}
 
