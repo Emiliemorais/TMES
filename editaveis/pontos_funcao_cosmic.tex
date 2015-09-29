@@ -1,0 +1,43 @@
+\section{Data da contagem}
+
+  A contagem por Pontos de Função COSMIC foi realizada no dia 27/09/2015.
+
+
+\section{Nível de granularidade do RFU e nível de decomposição do software}
+  
+   Como a principal documentação utilizada como base para a contagem fora as especificações de casos de uso, 
+   estes foram decompostos em requisitos funcionais menores que representassem todos os seus fluxos.
+  
+\section{Processos funcionais}
+  
+  Esta seção apresenta a contagem realizada para os processos funcionais identificados.
+  
+  \subsection{Visualizar Relatório de Acompanhamento por Projeto}
+  
+      \begin{table}[!h]
+      \centering
+      \caption{Visualizar Relatório de Acompanhamento por Projeto}
+      \label{pf_visualizar_relatorio_projeto}
+      \begin{tabular}{|c|c|c|c|}
+      \hline
+      \multicolumn{4}{|c|}{Visualizar Relatório de Acompanhamento por Projeto}                                                                                                                            \\ \hline
+      \textbf{Evento disparador}                                                                                                        & \textbf{Movimentos} & \textbf{Grupo de dados} & \textbf{Pontos} \\ \hline
+      \multirow{4}{*}{\begin{tabular}[c]{@{}c@{}}Usuário deseja visualizar o relatório\\  de acompanhamento por Projetos.\end{tabular}} & Entry               & Datas inicial e final   & 1               \\ \cline{2-4} 
+																      & Read                & Projeto                 & 1               \\ \cline{2-4} 
+																      & Exit                & Relatório do projeto    & 1               \\ \cline{2-4} 
+																      & Exit                & Mensagens               & 1               \\ \hline
+    \multicolumn{3}{|c|}{\textbf{TOTAL DE DER's}}                                                                                                                                     & \textbf{4}               \\ \hline
+    \end{tabular}
+    \end{table}
+  
+  
+\section{Suposições e observações}
+
+    \begin{itemize}
+      
+      \item Para a contagem dos processos funcionais Visualizar "Relatório de Acompanhamento por Projeto",
+	"Visualizar Relatório de Acompanhamento por Analista" e "Visualizar projetos", a funcionalidade de gerar 
+	o relatório em PDF ou XLS não foi contada por apresentar uma saída com o mesmo grupo de dados já utilizado na saída 
+	principal.
+      
+    \end{itemize}
