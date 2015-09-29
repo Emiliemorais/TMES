@@ -202,9 +202,12 @@ pontuação dos mesmos na contagem realizada.
       \multicolumn{2}{|c|}{\textbf{TOTAL DE DER's}}          & \textbf{5}         \\ \hline
       \end{tabular}
       \end{table}
+      \vfill
+      
+   \pagebreak
   
    \subsection{Pontuação das funções de transação}
-   
+    
 	\begin{table*}[!h]
 	\centering
 	\caption{Informações sobre as funções de transação}
@@ -233,11 +236,20 @@ pontuação dos mesmos na contagem realizada.
 	\hline
 	Listar projetos aprovados & CE & 1 & 11 & Baixa & 3 \\
 	\hline
-	Visualizar informações de habilitação e histórico de relatórios & CE & 1 & 6 & Baixa & 3 \\
+	Visualizar informações de habilitação e histórico de relatórios & CE & 1 & 10 & Baixa & 3 \\
 	\hline
 	Aceitar Relatorio Parcial & EE & 1 & 3 & Baixa & 3 \\
 	\hline
 	Recusar Relatório parcial & EE & 1 & 3 & Baixa & 3\\
+	\hline
+	Alterar Responsável & EE & 1 & 3 & Baixa & 3\\
+	\hline
+	Selecionar Tipo de Relatório & CE& 1 & 3 & Baixa & 3\\
+	\hline
+	Gerar Relatório - Base de dados Geral & SE& 3 & 30 & Alta & 7\\
+	\hline
+	Gerar Relatório - Base de Acompanhamento & SE& 3 & 8 & Média & 5\\
+	\hline
 	\end{tabular}
 	\end{table*}
 
@@ -264,21 +276,39 @@ pontuação dos mesmos na contagem realizada.
 	    Data de conclusão do subprojeto, Planilha de execução físico-financeira, Informações georreferenciadas, Notas fiscais, Outros, Item, Nome, Capacidade de iniciar ação e Capacidade de emitir mensagem\\
 
 	    \hline
-	    Visualizar Relatório Parcial&	Relatório&	Descrição final do projeto, Data de conclusão do projeto, Desenho esquemático, Subprojeto, Descrição final do subprojeto, Benefícios alcançados, Data de 
+	    Visualizar Relatório Final & Relatório& Descrição final do projeto, Data de conclusão do projeto, Desenho esquemático, Subprojeto, Descrição final do subprojeto, Benefícios alcançados, Data de 
 	    conclusão do subprojeto, Planilha de execução físico-financeira, Informações georreferenciadas, Notas fiscais, Outros, Item, Nome, Capacidade de iniciar ação \\
 	    \hline
-	    Visualizar Portaria de habilitação&	    Projeto &	Data da portaria, Data de publicação, Nº da portaria, Portaria de habilitação e Capacidade de iniciar ação\\
+	    Visualizar Portaria de habilitação&	 Projeto & Data da portaria, Data de publicação, Nº da portaria, Portaria de habilitação e Capacidade de iniciar ação\\
 
 	    \hline
-	    Listar projetos aprovados&	Projeto&	Campo de pesquisa, id,novo evento,  projeto, acompanhamento, Pj titular do projeto, Data de Submissão, Data de protocolo, Situação, É consórcio e Capacidade de iniciar ação\\
+	    Listar projetos aprovados&	Projeto& Campo de pesquisa, id,novo evento,  projeto, acompanhamento, Pj titular do projeto, Data de Submissão, Data de protocolo, Situação, É consórcio e Capacidade de iniciar ação\\
 	    \hline
-	    Visualizar informações de habilitação e histórico de relatórios&	Relatório&	"Relatório, Data limite de submissão, Data de submissão, Ação, Situação e Capacidade de iniciar ação"\\
+	    Visualizar informações de habilitação e histórico de relatórios&	Relatório& Data da portaria de habilitação, Portaria de habilitação, Data de publicação no DOU, nº da portaria de habilitação, Relatório,
+	    Data limite de submissão, Data de submissão, Ação, Situação e Capacidade de iniciar ação\\
+	    \hline
+	    Aceitar Relatório Parcial&	Relatório& Situação, Capacidade de iniciar ação e capacidade de emitir mensagem\\
 
 	    \hline
-	    Aceitar Relatorio Parcial&	Relatório&	Situação, Capacidade de iniciar ação e capacidade de emitir mensagem\\
-
+	    Recusar Relatório parcial&	Relatório& Situação, Capacidade de iniciar ação e capacidade de emitir mensagem\\
+	    
 	    \hline
-	    Recusar Relatório parcial&	Relatório&	Situação, Capacidade de iniciar ação e capacidade de emitir mensagem\\
+	    Alterar responsável& Projeto& Nome do responsável, Capacidade de iniciar ação e capacidade de emitir mensagem\\
+	    
+	    \hline
+	    Selecionar Tipo de Relatório& Relatorio& Tipo de Relatório, Capacidade de iniciar ação e capacidade de emitir mensagem\\
+	    
+	    \hline
+	    Gerar Relatório - Base de dados Geral& Relatório, Usuário e Projeto& Número Protocolo, Projeto Original, ID do projeto, Título do projeto
+	    , Número da Versão, Analista, PJ titular do projeto, CNPJ, Ano de Constituição, Quantidade de Empregados
+	    , Capital social, Representante Legal, Data de Submissão, Data de protocolo, Situação, Situação da Versão, Situação
+	    interna, É consórcio empresarial, id do projeto, Título do Projeto, Tipo de subprojeto, Data de início, Data de conclusão
+	    ,Valor do subprojeto, Município, UF e Capacidade de iniciar ação e capacidade de emitir mensagem\\
+	    
+	    \hline
+	    Gerar Relatório - Base de Acompanhamento& Relatório, Usuário e Projeto& Projeto Original, Título do projeto, Analista, Número Protocolo,
+	    Data Atividade, Atividade e Capacidade de iniciar ação e capacidade de emitir mensagem\\
+	    
 	    \hline
 	\caption{Informações sobre os DERs e os ALRs}
 	\end{longtable}
@@ -334,5 +364,10 @@ pontuação dos mesmos na contagem realizada.
     (Tabelas \ref{ee_validar_versao_projeto} e \ref{ee_resusar_versao_projeto}) foram descritos superficialmente por falta de informações
     na documentação disponível, considerando apenas que os processos atualizam a versão do projeto, a data e hora da versão e o tipo 
     de validação. A situação do projeto é usada com filtro de pesquisa;
+    
+   \item Para a contegem do processo elementar EE - Alterar responsável, considerou-se que o referido 'responsável' é a pessoa
+   responsável pelo projeto. Portanto, seu ARL é Projeto (Tabela \ref{ali_projeto}). Além disso, considerou-se que como DER se tem o 
+   nome do responsável.
+   
   \end{itemize}
 
