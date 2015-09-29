@@ -5,9 +5,11 @@
 
 \section{Nível de granularidade do RFU e nível de decomposição do software}
   
-   Como a principal documentação utilizada como base para a contagem fora as especificações de casos de uso, 
+   Como a principal documentação utilizada como base para a contagem foram as especificações de casos de uso, 
    estes foram decompostos em requisitos funcionais menores que representassem todos os seus fluxos.
-  
+
+\vfill
+\pagebreak
 \section{Processos funcionais}
   
   Esta seção apresenta a contagem realizada para os processos funcionais identificados.
@@ -16,7 +18,7 @@
   
       \begin{table}[!h]
       \centering
-      \caption{Visualizar Relatório de Acompanhamento por Projeto}
+      \caption{Processo Funcional - Visualizar Relatório de Acompanhamento por Projeto}
       \label{pf_visualizar_relatorio_projeto}
       \begin{tabular}{|c|c|c|c|}
       \hline
@@ -26,18 +28,106 @@
 																      & Read                & Projeto                 & 1               \\ \cline{2-4} 
 																      & Exit                & Relatório do projeto    & 1               \\ \cline{2-4} 
 																      & Exit                & Mensagens               & 1               \\ \hline
-    \multicolumn{3}{|c|}{\textbf{TOTAL DE DER's}}                                                                                                                                     & \textbf{4}               \\ \hline
+    \multicolumn{3}{|c|}{\textbf{TOTAL }}                                                                                                                                     & \textbf{4}               \\ \hline
     \end{tabular}
     \end{table}
   
+  \subsection{Visualizar Relatório de Acompanhamento por Analista}
   
+      \begin{table}[!h]
+      \centering
+      \caption{Processo Funcional - Visualizar Relatório de Acompanhamento por Analista}
+      \label{pf_visualizar_relatorio_analista}
+      \begin{tabular}{|c|c|c|c|}
+      \hline
+      \multicolumn{4}{|c|}{Visualizar Relatório de Acompanhamento por Analista}                                                                                                                           \\ \hline
+      \textbf{Evento disparador}                                                                                                        & \textbf{Movimentos} & \textbf{Grupo de dados} & \textbf{Pontos} \\ \hline
+      \multirow{4}{*}{\begin{tabular}[c]{@{}c@{}}Usuário deseja visualizar o relatório\\  de acompanhamento por Analista.\end{tabular}} & Entry               & Solicita o relatório    & 1               \\ \cline{2-4} 
+																	& Read                & Projeto                 & 1               \\ \cline{2-4} 
+																	& Exit                & Relatório do projeto    & 1               \\ \cline{2-4} 
+																	& Exit                & Mensagens               & 1               \\ \hline
+      \multicolumn{3}{|c|}{\textbf{TOTAL}}                                       
+	& \textbf{4}      \\ \hline
+      \end{tabular}
+      \end{table}
+      
+   \subsection{Visualizar Projetos}
+   
+      \begin{table}[!h]
+      \centering
+      \caption{Processo funcional - Visualizar projetos}
+      \label{pf_visualizar_projetos}
+      \begin{tabular}{|c|c|c|c|}
+      \hline
+      \multicolumn{4}{|c|}{Visualizar Projetos}                                                                                                                                                                                                \\ \hline
+      \textbf{Evento disparador}                                                                                    & \textbf{Movimentos} & \textbf{Grupo de dados}                                                          & \textbf{Pontos} \\ \hline
+      \multirow{4}{*}{\begin{tabular}[c]{@{}c@{}}Usuário deseja gerenciar ou \\ analisar os projetos.\end{tabular}} & Entry               & \begin{tabular}[c]{@{}c@{}}Filtro para pesquisa\\ e solicita a ação\end{tabular} & 1               \\ \cline{2-4} 
+														    & Read                & Projeto                                                                          & 1               \\ \cline{2-4} 
+														    & Exit                & Projeto                                                                          & 1               \\ \cline{2-4} 
+														    & Exit                & Mensagens                                                                        & 1               \\ \hline
+      \multicolumn{3}{|c|}{\textbf{TOTAL}}                                                                                                                                                                          & \textbf{4}      \\ \hline
+      \end{tabular}
+      \end{table}
+    
+    \vfill
+    \pagebreak
+    \subsection{Detalhar projeto}
+	
+	\begin{table}[!h]
+	\centering
+	\caption{Processo funcional - Detalhar projeto}
+	\label{pf_detalhar_projeto}
+	\begin{tabular}{|c|c|c|c|}
+	\hline
+	\multicolumn{4}{|c|}{Detalhar Projeto}                                                                                                                                                        \\ \hline
+	\textbf{Evento disparador}                                                                                                & \textbf{Movimentos} & \textbf{Grupo de dados}   & \textbf{Pontos} \\ \hline
+	\multirow{3}{*}{\begin{tabular}[c]{@{}c@{}}Usuário deseja visualizar\\ mais informações sobre \\ o projeto.\end{tabular}} & Entry               & Solicita mais informações & 1               \\ \cline{2-4} 
+																  & Read                & Projeto                   & 1               \\ \cline{2-4} 
+																  & Exit                & Detalhes do Projeto       & 1               \\ \hline
+	\multicolumn{3}{|c|}{\textbf{TOTAL}}                                                                                                                                        & \textbf{3}      \\ \hline
+	\end{tabular}
+	\end{table}
+	
+    \subsection{Validar versão do projeto}
+    
+	\begin{table}[!h]
+	\centering
+	\caption{Processo funcional - Validar versão do projeto}
+	\label{pf_validar_versao}
+	\begin{tabular}{|c|c|c|c|}
+	\hline
+	\multicolumn{4}{|c|}{Validar versão do Projeto}                                                                                                                             \\ \hline
+	\textbf{Evento disparador}                                                                                & \textbf{Movimentos} & \textbf{Grupo de dados} & \textbf{Pontos} \\ \hline
+	\multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}Usuário deseja validar uma \\ versão do projeto.\end{tabular}} & Entry               & Solicita validação      & 1               \\ \cline{2-4} 
+														  & Write               & Versão do Projeto       & 1               \\ \hline
+	\multicolumn{3}{|c|}{\textbf{TOTAL}}                                                                                                                      & \textbf{2}      \\ \hline
+	\end{tabular}
+	\end{table}
+
+    \subsection{Recusar versão do projeto}
+    
+	\begin{table}[!h]
+	\centering
+	\caption{Processo funcional - Recusar versão do projeto}
+	\label{pf_recusar_versao}
+	\begin{tabular}{|c|c|c|c|}
+	\hline
+	\multicolumn{4}{|c|}{Recusar versão do Projeto}                                                                                                                             \\ \hline
+	\textbf{Evento disparador}                                                                                & \textbf{Movimentos} & \textbf{Grupo de dados} & \textbf{Pontos} \\ \hline
+	\multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}Usuário deseja recusar uma \\ versão do projeto.\end{tabular}} & Entry               & Solicita validação      & 1               \\ \cline{2-4} 
+														  & Write               & Versão do Projeto       & 1               \\ \hline
+	\multicolumn{3}{|c|}{\textbf{TOTAL}}                                                                                                                      & \textbf{2}      \\ \hline
+	\end{tabular}
+	\end{table}
+	
 \section{Suposições e observações}
 
     \begin{itemize}
       
       \item Para a contagem dos processos funcionais Visualizar "Relatório de Acompanhamento por Projeto",
-	"Visualizar Relatório de Acompanhamento por Analista" e "Visualizar projetos", a funcionalidade de gerar 
-	o relatório em PDF ou XLS não foi contada por apresentar uma saída com o mesmo grupo de dados já utilizado na saída 
-	principal.
+	"Visualizar Relatório de Acompanhamento por Analista" e "Visualizar projetos" 
+	(Tabelas \ref{pf_visualizar_relatorio_projeto}, \ref{pf_visualizar_relatorio_analista}, \ref{pf_visualizar_projetos}),
+	a funcionalidade de gerar o relatório em PDF ou XLS não foi contada por apresentar uma saída com o mesmo grupo de 
+	dados já utilizado na saída principal.
       
     \end{itemize}
