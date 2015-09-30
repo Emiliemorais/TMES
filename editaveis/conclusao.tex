@@ -1,17 +1,29 @@
 \chapter{Conclusão}
 
-  \section{Análise dos resultados}
-    
-      \subsection{Técnica de Pontos de Casos de Uso}
+  Esta seção apresenta as conclusões feitas com a realização das contagens, utilizando as diferentes técnicas de medição.
+
+  \section{Técnica de Pontos de Casos de Uso}
       
-	A contagem por Pontos de Caso de Uso depende bastante da qualidade da documentação disponível.
-	No caso do sistema contado neste trabalho, a qualidade da documentação era bem precária, o que pode 
-	ter influenciado negativamente a contagem, que pode apresentar relevante inconsistência.
+    A contagem por Pontos de Caso de Uso depende bastante da qualidade e do tipo da documentação disponível.
+    No caso do sistema contado neste trabalho, a qualidade da documentação era bem precária, o que pode 
+    ter influenciado negativamente a contagem, que pode apresentar relevante inconsistência. Em alguns casos, é difícil 
+    identificar as transações inerentes a um caso de uso, o que dificulta a contagem.
 	
-      \subsection{Técnica de Pontos de Função}
+  \section{Técnica de Pontos de Função}
+    
+    A contagem por Pontos de Função é uma técnica mais elaborada que exige um esforço de análise muito maior em relação às outras duas 
+    técnicas, por precisar identificar a quantidade de atributos de cada grupo de dados, sendo, às vezes, necessário uma documentação maior e mais técnica
+    para o levantamento preciso de tais informações.
+    
+    Um fator que desvaloriza um pouco a contagem por pontos de função é que esta não conta a visualização de um mesmo 
+    conjunto de dados simplesmente por estar em outro formato de apresentação. Por mais que seja o mesmo conjunto de dados, 
+    a forma de apresentação impacta bastante tanto na implementação quanto na visão do usuário. Por exemplo, visualizar um relatório 
+    em uma tabela na tela e gerar um arquivo PDF com o mesmo relatório, são funcionalidades diferentes, em questão de implementação, 
+    e, sob o ponto de vista do usuário, o relatório em PDF agrega um valor diferente, o que devia ser considerado pela técnica.
 	
-	Um fator que desvaloriza um pouco a contagem por pontos de função é que esta não conta a visualização de um mesmo 
-	conjunto de dados simplesmente por estar em outro formato de apresentação. Por mais que seja o mesmo conjunto de dados, 
-	a forma de apresentação impacta bastante tanto na implementação quanto na visão do usuário. Por exemplo, visualizar um relatório 
-	em uma tabela na tela e gerar um arquivo PDF com o mesmo relatório, são funcionalidades diferentes, em questão de implementação, 
-	e, sob o ponto de vista do usuário, o relatório em PDF agrega um valor diferente, o que devia ser considerado pela técnica.
+  \section{Técnica de Pontos de Função COSMIC}
+  
+    A contagem por Pontos de Função COSMIC fornece um método mais simples e intuitivo de contar o tamanho funcional do software, 
+    a partir das movimentações de dados realizadas interna e externamente. Além de ser mais fácil realizar a contagem, o resultado obtido 
+    representa mais intuitivamente o tamanho do software, apresentando uma quantidade aproximada das transações realizadas por este sistema.
+	

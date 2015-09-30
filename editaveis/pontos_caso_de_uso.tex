@@ -7,7 +7,7 @@
 \begin{table*}[!h]
 \centering
 \caption{Atores do sistema}
-\label{atores}
+\label{Rotulo}
   \begin{tabular}{|p{0.20\linewidth}|p{0.25\linewidth}|p{0.30\linewidth}|p{0.10\linewidth}|}
   \hline
   \textbf{Nome do ator} & \textbf{Complexidade} & \textbf{Justificativa} & \textbf{PCU} \\ 
@@ -29,9 +29,88 @@
   \input{editaveis/casos_de_uso}
 
 \section{Valores e considerações para a escolha do nível dos fatores técnicos}
+  
+    \begin{table}[!h]
+    \centering
+    \caption{Fatores técnicos}
+    \label{fatores_tecnicos}
+    \begin{tabular}{l|l|l|l|l}
+    \hline
+    ID  & Fator                                                          & Peso & Valor & Peso técnico\\
+    \hline
+    T1  & Sistema distribuído                                            &  2    &  4  & 8   \\
+    T2  & Objetivos de performance relativos à tempo de resposta e vazão &  1    &  1  & 1  \\
+    T3  & Eficiência para o usuário (online)                             &  1    &  3  & 3  \\
+    T4  & Processamento interno complexo                                 &  1    &  2  & 2  \\
+    T5  & Reutilização de código                                         &  1    &  2  & 2  \\
+    T6  & Facilidade na instalação                                       & 0.5   &  1  & 0.5  \\
+    T7  & Facilidade na utilização                                       & 0.5   &  2  & 1  \\
+    T8  & Portabilidade                                                  &  2    &  3  & 6  \\
+    T9  & Manutenabilidade                                               &  1    &  1  & 1  \\
+    T10 & Concorrência                                                   &  1    &  3  & 3  \\
+    T11 & Inclui características especiais de segurança                  &  1    &  2  & 2  \\
+    T12 & Fornece acesso direto para terceiros                           &  1    &  1  & 1  \\
+    T13 & Facilidades de treinamento especiais para usuários             &  1    &  0  & 0  \\
+    \hline
+    \multicolumn{4}{c}{Total dos Fatores Técnicos} & 30.5\\
+    \hline
+    \multicolumn{4}{c}{\textbf{Fator de Complexidade Técnica}} & \textbf{0.905}\\
+    \hline
+    \end{tabular}
+    \end{table}
+  
+  \subsection{Considerações}
+      
+      Para a estimativa dos fatores técnicos, foram feitas as seguintes considerações:
+    
+      \begin{itemize}
+       \item Não há requisitos especiais em relação à eficiência do sistema;
+       \item O sistema realiza processamento especial de auditoria ao manter o registro dos relatórios gerados;
+       \item O software foi desenvolvido pensando em pouca reutilização do código;
+       \item Existe um processo de instalação definido para o software (segundo o Plano de Especificação de Software);
+       \item O sistema de recuperação e backup da DIRED (informação retirar da o Plano de Especificação de Software)
+	  não necessita de intermédio do operador;
+       \item O sistema deve operar nas plataformas Linux e Windows (segundo o Plano de Especificação de Software);
+       \item O sistema será acessado diariamemente por diferentes usuários;
+       \item O sistema realiza o controle de login dos usuários, permitindo o acesso apenas para usuários autorizados;
+       \item O sistema deve se comunicar com outros dois softwares (segundo o Plano de Especificação de Software);
+       \item Não foi feita nenhuma consideração a respeito de treinamento dos usuários.
+      \end{itemize}
 
+  
 \section{Valores e considerações para a escolha do nível dos fatores ambientais}
-
+    
+    Foi considerado o contexto de uma fábrica de software experiente que foi contratada para desenvolver o sistema 
+    para o Ministério das Comunicações. Como uma fábrica experiente, o time é familiarizado com o processo de desenvolvimento, 
+    já trabalhou em projetos anteriores e possuem baixa dificuldade com a linguagem de programação e é composto por integrantes no regime de 
+    participação integral.
+    Além disso, levando em conta o contexto,
+    foi considerado que os requisitos da aplicação são estáveis, com a possibilidade de pequenas alterações.
+    
+    \begin{table}[!h]
+    \centering
+    \caption{Fatores ambientais}
+    \label{fatores_ambientais}
+    \begin{tabular}{l|l|l|l|l}
+    \hline
+    ID  & Fator                                                          & Peso & Valor & Peso técnico\\
+    \hline
+    F1  & Familiariadade com o processo utilizado                        &  1.5  &  5  & 7.5  \\
+    F2  & Experiência na aplicação                                       &  0.5  &  4  & 2  \\
+    F3  & Experiência em orientação a objetos                            &   1   &  4  & 4  \\
+    F4  & Capacidade de liderança do líder                               &  0.5  &  4  & 2  \\
+    F5  & Motivação                                                      &   1   &  3  & 3  \\
+    F6  & Requisitos estáveis                                            &   2   &  4  & 8  \\
+    F7  & Trabalhadores part-time                                        &  -1   &  0  & 0  \\
+    F8  & Dificuldade na linguagem de programação                        &  -1   &  1  & -1  \\
+    \hline
+    \multicolumn{4}{c}{Total dos Fatores Ambientais} & 25.5\\
+    \hline
+    \multicolumn{4}{c}{\textbf{Fator Ambiental}} & \textbf{0.635}\\
+    \hline
+    \end{tabular}
+    \end{table}
+  
 \vfill
 \pagebreak
 \section{Resultado da contagem}
@@ -45,10 +124,7 @@
   \textbf{Atores} & \textbf{Casos de Uso} & \textbf{Total não ajustado} & \textbf{Total ajustado} \\ 
   \hline
 
-  9 & & &\\
+  9 & 80 & 89 & 51,14608\\
   \hline
   \end{tabular}
 \end{table*}
-
-\section{Suposições e observações gerais}
-
