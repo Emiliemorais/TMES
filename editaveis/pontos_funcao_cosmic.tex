@@ -232,7 +232,9 @@
     \multicolumn{3}{|c|}{\textbf{TOTAL }}                                                                                                                                     & \textbf{4}               \\ \hline
     \end{tabular}
     \end{table}
-  
+    
+  \vfill
+  \pagebreak
   \subsection{Visualizar Relatório de Acompanhamento por Analista}
   
       \begin{table}[!h]
@@ -270,8 +272,7 @@
       \end{tabular}
       \end{table}
     
-    \vfill
-    \pagebreak
+ 
     \subsection{Detalhar projeto}
 	
 	\begin{table}[!h]
@@ -378,6 +379,107 @@
 	
 	
 	
+     \subsection{Suspender Análise}
+    
+	\begin{table}[!h]
+	\centering
+	\caption{Processo funcional - Suspender Análise}
+	\label{pf_suspender_analise}
+	\begin{tabular}{|c|c|c|c|}
+	\hline
+	\multicolumn{4}{|c|}{Suspender Análise}                                                                                                                                                  \\ \hline
+	\textbf{Evento disparador}                                                                                            & \textbf{Movimentos} & \textbf{Grupo de dados} & \textbf{Pontos}     \\ \hline
+	\multirow{3}{*}{\begin{tabular}[c]{@{}c@{}}Usuário deseja suspender \\ análise de um projeto.\end{tabular}}           & Entry              & Motivo da suspensão       		& 1               \\ \cline{2-4} 
+															      & Write               & Projeto                 	    	& 1               \\ \cline{2-4}
+															      & Exit               & Mensagens                      	& 1               \\ \hline
+	\multicolumn{3}{|c|}{\textbf{TOTAL}}                                                                                                                      & \textbf{3}      \\ \hline
+	\end{tabular}
+	\end{table}
+	
+	
+	
+      \subsection{Solicitar informações para alterações de projeto}
+    
+	\begin{table}[!h]
+	\centering
+	\caption{Processo funcional - Solicitar informações para alterações de projeto}
+	\label{pf_solicitar_alteração}
+	\begin{tabular}{|c|c|c|c|}
+	\hline
+	\multicolumn{4}{|c|}{Solicitar informações para alterações de projeto}                                                                                                                                                  \\ \hline
+	\textbf{Evento disparador}                                                                                            & \textbf{Movimentos} & \textbf{Grupo de dados} & \textbf{Pontos}     \\ \hline
+	\multirow{3}{*}{\begin{tabular}[c]{@{}c@{}}Usuário deseja solicitar informações \\ para alteração de projeto.\end{tabular}}           & Entry              & solicitação de alteração      		& 1               \\ \cline{2-4} 
+																	      & Write               & Conversa                 	    	& 1               \\ \cline{2-4}
+																	      & Write               & Projeto                	    	& 1               \\ \cline{2-4}
+																	      & Exit               & Mensagens                      	& 1               \\ \hline
+	\multicolumn{3}{|c|}{\textbf{TOTAL}}                                                                                                                      & \textbf{4}      \\ \hline
+	\end{tabular}
+	\end{table}
+	
+      \vfill
+      \pagebreak
+      \subsection{Iniciar troca de mensagens}
+    
+	\begin{table}[!h]
+	\centering
+	\caption{Processo funcional -  Iniciar troca de mensagens}
+	\label{pf_troca_mensagem}
+	\begin{tabular}{|c|c|c|c|}
+	\hline
+	\multicolumn{4}{|c|}{ Iniciar troca de mensagens}                                                                                                                                                  \\ \hline
+	\textbf{Evento disparador}                                                                                            & \textbf{Movimentos} & \textbf{Grupo de dados} & \textbf{Pontos}     \\ \hline
+	\multirow{4}{*}{\begin{tabular}[c]{@{}c@{}}Usuário deseja iniciar uma \\ troca de mensagens.\end{tabular}}           & Entry              &\begin{tabular}[c]{@{}c@{}} solicitação de troca \\ de mensagens\end{tabular}  & 1               \\ \cline{2-4} 
+																	      & Write               & Conversa                 	    	& 1               \\ \cline{2-4}
+																	      & Read              & Conversa                 	    	& 1               \\ \cline{2-4}
+																	      & Exit               & Mensagens                      	& 1               \\ \hline
+	\multicolumn{3}{|c|}{\textbf{TOTAL}}                                                                                                                      & \textbf{4}      \\ \hline
+	\end{tabular}
+	\end{table}
+	
+	
+
+      \subsection{Visualizar histórico de mensagens}
+    
+	\begin{table}[!h]
+	\centering
+	\caption{Processo funcional - Visualizar histórico de mensagens}
+	\label{pf_historico_mensagem}
+	\begin{tabular}{|c|c|c|c|}
+	\hline
+	\multicolumn{4}{|c|}{Visualizar histórico de mensagens}                                                                                                                                                  \\ \hline
+	\textbf{Evento disparador}                                                                                            & \textbf{Movimentos} & \textbf{Grupo de dados} & \textbf{Pontos}     \\ \hline
+	\multirow{3}{*}{\begin{tabular}[c]{@{}c@{}}Usuário deseja visualizar um \\ histórico de mensagens.\end{tabular}}           	      & Entry              &\begin{tabular}[c]{@{}c@{}} solicitação de visualização \\ de mensagens\end{tabular}  & 1               \\ \cline{2-4} 
+																	      & Read              & Conversa                 	    	& 1               \\ \cline{2-4}
+																	      & Exit               & Mensagens                      	& 1               \\ \hline
+	\multicolumn{3}{|c|}{\textbf{TOTAL}}                                                                                                                      & \textbf{3}      \\ \hline
+	\end{tabular}
+	\end{table}
+	
+	
+	
+      \subsection{Encerrar troca de mensagens}
+    
+	\begin{table}[!h]
+	\centering
+	\caption{Processo funcional - Encerrar troca de mensagens}
+	\label{pf_encerrar_mensagem}
+	\begin{tabular}{|c|c|c|c|}
+	\hline
+	\multicolumn{4}{|c|}{Encerrar troca de mensagens}                                                                                                                                                  \\ \hline
+	\textbf{Evento disparador}                                                                                            & \textbf{Movimentos} & \textbf{Grupo de dados} & \textbf{Pontos}     \\ \hline
+	\multirow{3}{*}{\begin{tabular}[c]{@{}c@{}}Usuário deseja iniciar uma \\ troca de mensagens.\end{tabular}}           & Entry              &\begin{tabular}[c]{@{}c@{}} solicitação de troca \\ de mensagens\end{tabular}  & 1               \\ \cline{2-4} 
+																	      & Write               & Conversa                 	    	& 1               \\ \cline{2-4}
+																	      & Exit               & Mensagens                      	& 1               \\ \hline
+	\multicolumn{3}{|c|}{\textbf{TOTAL}}                                                                                                                      & \textbf{3}      \\ \hline
+	\end{tabular}
+	\end{table}
+	
+	
+	
+	
+	
+	
+	
 \section{Suposições e observações}
 
     \begin{itemize}
@@ -387,5 +489,8 @@
 	(Tabelas \ref{pf_visualizar_relatorio_projeto}, \ref{pf_visualizar_relatorio_analista}, \ref{pf_visualizar_projetos}),
 	a funcionalidade de gerar o relatório em PDF ou XLS não foi contada por apresentar uma saída com o mesmo grupo de 
 	dados já utilizado na saída principal.
+	
+      \item O Processo funcional "Imprimir histórico de mensagens" não foi contado, pois apresenta as mesmas movimentações de dados do processo
+      "Visualizar histórico de mensagens" (Tabela \ref{pf_historico_mensagem})
 	
     \end{itemize}
