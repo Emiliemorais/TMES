@@ -14,6 +14,207 @@
   
   Esta seção apresenta a contagem realizada para os processos funcionais identificados.
   
+  \subsection{Listar projetos}
+  
+      \begin{table}[!h]
+      \centering
+      \caption{Processo Funcional - Listar projetos}
+      \label{pf_listar_projetos}
+      \begin{tabular}{|c|c|c|c|}
+      \hline
+      \multicolumn{4}{|c|}{Listar projetos}                                                                                                                            \\ \hline
+      \textbf{Evento disparador}                                                                                                        & \textbf{Movimentos} & \textbf{Grupo de dados} & \textbf{Pontos} \\ \hline
+      \multirow{4}{*}{\begin{tabular}[c]{@{}c@{}}Usuário deseja visualizar os seus projetos.\end{tabular}} & Entry               & Seleciona a visualização   & 1               \\ \cline{2-4} 
+																      & Read                & Projeto                 & 1               \\ \cline{2-4} 
+																      & Exit                & Projeto    & 1               \\ \hline
+    \multicolumn{3}{|c|}{\textbf{TOTAL }}                                                                                                                                     & \textbf{3}               \\ \hline
+    \end{tabular}
+    \end{table}
+  
+   \subsection{Cadastrar Portaria de Habilitação}
+  
+      \begin{table}[!h]
+      \centering
+      \caption{Processo Funcional - Cadastrar Portaria de Habilitação}
+      \label{pf_listar_projetos}
+      \begin{tabular}{|c|c|c|c|}
+      \hline
+      \multicolumn{4}{|c|}{Cadastrar Portaria de Habilitação}                                                                                                                            \\ \hline
+      \textbf{Evento disparador}                                                                                                        & \textbf{Movimentos} & \textbf{Grupo de dados} & \textbf{Pontos} \\ \hline
+      \multirow{4}{*}{\begin{tabular}[c]{@{}c@{}}Usuário deseja realizar o upload\\ de uma portaria de habilitação, \\assim seleciona um projeto.\end{tabular}} & Entry               & Projeto   & 1               \\ \cline{2-4} 
+																      & Write & Projeto                 & 1               \\ \cline{2-4} 
+																      & Exit                & Projeto    & 1               \\ \cline{2-4}
+																      & Exit                & Mensagens               & 1               \\ \hline
+    \multicolumn{3}{|c|}{\textbf{TOTAL }}                                                                                                                                     & \textbf{4}               \\ \hline
+    \end{tabular}
+    \end{table}
+  
+     \subsection{Submeter Relatório Parcial}
+  
+      \begin{table}[!h]
+      \centering
+      \caption{Processo Funcional - Submeter Relatório Parcial}
+      \label{pf_submeter_relatorio}
+      \begin{tabular}{|c|c|c|c|}
+      \hline
+      \multicolumn{4}{|c|}{Submeter Relatório Parcial}                                                                                                                            \\ \hline
+      \textbf{Evento disparador}                                                                                                        & \textbf{Movimentos} & \textbf{Grupo de dados} & \textbf{Pontos} \\ \hline
+      \multirow{4}{*}{\begin{tabular}[c]{@{}c@{}}Usuário deseja enviar um relatório parcial.\end{tabular}} & Entry               & Solicita o envio   & 1               \\ \cline{2-4} 
+																      & Read & Projeto                 & 1               \\ \cline{2-4} 
+																      & Read & Subprojeto                 & 1               \\ \cline{2-4} 
+																      & Write                & Projeto    & 1               \\ \cline{2-4}
+																      & Write                & Subprojeto    & 1               \\ \cline{2-4}
+																      & Exit                & Mensagens               & 1               \\ \hline
+    \multicolumn{3}{|c|}{\textbf{TOTAL }}                                                                                                                                     & \textbf{6}               \\ \hline
+    \end{tabular}
+    \end{table}
+    
+      
+     \subsection{Visualizar Relatório Parcial}
+  
+      \begin{table}[!h]
+      \centering
+      \caption{Processo Funcional - Visualizar Relatório Parcial}
+      \label{pf_visualizar_relatorio_parcial}
+      \begin{tabular}{|c|c|c|c|}
+      \hline
+      \multicolumn{4}{|c|}{Visualizar Relatório Parcial}                                                                                                                            \\ \hline
+      \textbf{Evento disparador}                                                                                                        & \textbf{Movimentos} & \textbf{Grupo de dados} & \textbf{Pontos} \\ \hline
+      \multirow{4}{*}{\begin{tabular}[c]{@{}c@{}}Usuário deseja visualizar um\\ relatório parcial.\end{tabular}} & Entry               & Solicita a visualização   & 1               \\ \cline{2-4} 
+																      & Read & Projeto                 & 1               \\ \cline{2-4} 
+																      & Read & Subrojeto                 & 1               \\ \cline{2-4} 
+																      & Exit                & Relatório               & 1               \\ \hline
+    \multicolumn{3}{|c|}{\textbf{TOTAL }}                                                                                                                                     & \textbf{4}               \\ \hline
+    \end{tabular}
+    \end{table}
+    \pagebreak
+    \subsection{Cadastrar Relatório Final}
+  
+      \begin{table}[!h]
+      \centering
+      \caption{Processo Funcional - Cadastrar Relatório Final}
+      \label{pf_cadastrar_relatorio}
+      \begin{tabular}{|c|c|c|c|}
+      \hline
+      \multicolumn{4}{|c|}{Cadastrar Relatório Final}                                                                                                                            \\ \hline
+      \textbf{Evento disparador}                                                                                                        & \textbf{Movimentos} & \textbf{Grupo de dados} & \textbf{Pontos} \\ \hline
+      \multirow{4}{*}{\begin{tabular}[c]{@{}c@{}}Usuário deseja registrar\\ um relatório final.\end{tabular}} & Entry               & Solicita a visualização   & 1               \\ \cline{2-4} 
+																      & Read & Projeto                 & 1               \\ \cline{2-4} 
+																      & Read & Subrojeto                 & 1               \\ \cline{2-4} 
+																      & Write                & Projeto               & 1               \\ \cline{2-4}
+																      & Write                & Subprojeto               & 1               \\ \cline{2-4}
+																      & Exit                & Mensagens               & 1               \\ \hline
+    \multicolumn{3}{|c|}{\textbf{TOTAL }}                                                                                                                                     & \textbf{6}               \\ \hline
+    \end{tabular}
+    \end{table}
+    
+        \subsection{Alterar Relatório Final}
+  
+      \begin{table}[!h]
+      \centering
+      \caption{Processo Funcional - Alterar Relatório Final}
+      \label{pf_alterar_relatorio}
+      \begin{tabular}{|c|c|c|c|}
+      \hline
+      \multicolumn{4}{|c|}{Alterar Relatório Final}                                                                                                                            \\ \hline
+      \textbf{Evento disparador}                                                                                                        & \textbf{Movimentos} & \textbf{Grupo de dados} & \textbf{Pontos} \\ \hline
+      \multirow{4}{*}{\begin{tabular}[c]{@{}c@{}}Usuário deseja alterar \\um relatório final enviado.\end{tabular}} & Entry               & Solicita a alteração   & 1               \\ \cline{2-4} 
+																      & Read & Projeto                 & 1               \\ \cline{2-4} 
+																      & Read & Subrojeto                 & 1               \\ \cline{2-4} 
+																      & Write                & Projeto               & 1               \\ \cline{2-4}
+														      & Write                & Subprojeto               & 1               \\ \cline{2-4}
+																      & Exit                & Mensagens               & 1               \\ \hline
+    \multicolumn{3}{|c|}{\textbf{TOTAL }}                                                                                                                                     & \textbf{6}               \\ \hline
+    \end{tabular}
+    \end{table}
+  \pagebreak
+          \subsection{Visualizar Relatório Final}
+  
+      \begin{table}[!h]
+      \centering
+      \caption{Processo Funcional - Visualizar Relatório Final}
+      \label{pf_visualizar_relatorio}
+      \begin{tabular}{|c|c|c|c|}
+      \hline
+      \multicolumn{4}{|c|}{Visualizar Relatório Final}                                                                                                                            \\ \hline
+      \textbf{Evento disparador}                                                                                                        & \textbf{Movimentos} & \textbf{Grupo de dados} & \textbf{Pontos} \\ \hline
+      \multirow{4}{*}{\begin{tabular}[c]{@{}c@{}}Usuário deseja visualizar\\ um relatório final enviado.\end{tabular}} & Entry               & Solicita a visualização   & 1               \\ \cline{2-4} 
+																      & Read & Projeto                 & 1               \\ \cline{2-4} 
+																      & Read & Subrojeto                 & 1               \\ \cline{2-4} 
+																      & Exit                & Mensagens               & 1               \\ \hline
+    \multicolumn{3}{|c|}{\textbf{TOTAL }}                                                                                                                                     & \textbf{4}               \\ \hline
+    \end{tabular}
+    \end{table}
+    
+    
+          \subsection{Visualizar Portaria de Habilitação}
+  
+      \begin{table}[!h]
+      \centering
+      \caption{Processo Funcional - Visualizar Portaria de Habilitação}
+      \label{pf_visualizar_portaria}
+      \begin{tabular}{|c|c|c|c|}
+      \hline
+      \multicolumn{4}{|c|}{Visualizar Portaria de Habilitação}                                                                                                                            \\ \hline
+      \textbf{Evento disparador}                                                                                                        & \textbf{Movimentos} & \textbf{Grupo de dados} & \textbf{Pontos} \\ \hline
+      \multirow{4}{*}{\begin{tabular}[c]{@{}c@{}}Usuário deseja visualizar a \\portaria de habilitação do projeto.\end{tabular}} & Entry               & Solicita a visualização   & 1               \\ \cline{2-4} 
+																      & Read & Projeto                 & 1               \\ \cline{2-4} 
+																      & Exit                & Projeto               & 1               \\ \hline
+    \multicolumn{3}{|c|}{\textbf{TOTAL }}                                                                                                                                     & \textbf{3}               \\ \hline
+    \end{tabular}
+    \end{table}
+    
+    \pagebreak
+              \subsection{Visualizar o histórico de relatórios}
+  
+      \begin{table}[!h]
+      \centering
+      \caption{Processo Funcional - Visualizar o histórico de relatórios}
+      \label{pf_visualizar_historico_relatorio}
+      \begin{tabular}{|c|c|c|c|}
+      \hline
+      \multicolumn{4}{|c|}{Visualizar o histórico de relatórios}                                                                                                                            \\ \hline
+      \textbf{Evento disparador}                                                                                                        & \textbf{Movimentos} & \textbf{Grupo de dados} & \textbf{Pontos} \\ \hline
+      \multirow{4}{*}{\begin{tabular}[c]{@{}c@{}}Usuário deseja visualizar os relatórios.\end{tabular}} & Entry               & Solicita a visualização   & 1               \\ \cline{2-4} 
+																      & Read & Projeto                 & 1               \\ \cline{2-4} 
+																      & Exit                & Projeto               & 1               \\ \hline
+    \multicolumn{3}{|c|}{\textbf{TOTAL }}                                                                                                                                     & \textbf{3}               \\ \hline
+    \end{tabular}
+    \end{table}
+       
+              \subsection{Aceitar relatório}
+  
+      \begin{table}[!h]
+      \centering
+      \caption{Processo Funcional - Aceitar relatório}
+      \label{pf_aceitar_relatorio}
+      \begin{tabular}{|c|c|c|c|}
+      \hline
+      \multicolumn{4}{|c|}{Aceitar relatório}                                                                                                                            \\ \hline
+      \textbf{Evento disparador}                                                                                                        & \textbf{Movimentos} & \textbf{Grupo de dados} & \textbf{Pontos} \\ \hline
+      \multirow{4}{*}{\begin{tabular}[c]{@{}c@{}}Usuário deseja aceitar um relatório.\end{tabular}} & Entry               & Solicita o aceite   & 1               \\ \cline{2-4} 
+																      & Write & Projeto                 & 1               \\ \cline{2-4} 
+																      & Exit                & Mensagens & 1               \\ \hline
+    \multicolumn{3}{|c|}{\textbf{TOTAL }}                                                                                                                                     & \textbf{3}               \\ \hline
+    \end{tabular}
+    \end{table}
+                  \subsection{Recusar relatório}
+  
+      \begin{table}[!h]
+      \centering
+      \caption{Processo Funcional - Recusar relatório}
+      \label{pf_recusar_relatorio}
+      \begin{tabular}{|c|c|c|c|}
+      \hline
+      \multicolumn{4}{|c|}{Recusar relatório}                                                                                                                            \\ \hline
+      \textbf{Evento disparador}                                                                                                        & \textbf{Movimentos} & \textbf{Grupo de dados} & \textbf{Pontos} \\ \hline
+      \multirow{4}{*}{\begin{tabular}[c]{@{}c@{}}Usuário deseja aceitar um relatório.\end{tabular}} & Entry               & Solicita o aceite   & 1               \\ \cline{2-4} 
+																      & Write & Projeto                 & 1               \\ \cline{2-4} 
+																      & Exit                & Mensagens & 1               \\ \hline
+    \multicolumn{3}{|c|}{\textbf{TOTAL }}                                                                                                                                     & \textbf{3}               \\ \hline
+    \end{tabular}
+    \end{table}
+    
   \subsection{Visualizar Relatório de Acompanhamento por Projeto}
   
       \begin{table}[!h]
