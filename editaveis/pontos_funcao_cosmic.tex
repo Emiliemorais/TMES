@@ -119,6 +119,63 @@
 	\multicolumn{3}{|c|}{\textbf{TOTAL}}                                                                                                                      & \textbf{2}      \\ \hline
 	\end{tabular}
 	\end{table}
+
+    \subsection{Gerar Relatório – Base de dados geral}
+    
+	\begin{table}[!h]
+	\centering
+	\caption{Processo funcional - Gerar Relatório: Base de dados geral}
+	\label{pf_relatorio_geral}
+	\begin{tabular}{|c|c|c|c|}
+	\hline
+	\multicolumn{4}{|c|}{Gerar Relatório – Base de dados geral}                                                                                                                             \\ \hline
+	\textbf{Evento disparador}                                                                                            & \textbf{Movimentos} & \textbf{Grupo de dados} & \textbf{Pontos} \\ \hline
+	\multirow{4}{*}{\begin{tabular}[c]{@{}c@{}}Usuário deseja gerar um \\ relatório: Base de dados geral.\end{tabular}} & Entry              & Tipo base de dados geral       & 1               \\ \cline{2-4} 
+															      & Read               & Projeto                 	    & 1               \\ \cline{2-4}
+															      & Exit               & Relatório base de dados geral  & 1               \\ \cline{2-4}
+															      & Exit               & Mensagens                      & 1               \\ \hline
+	\multicolumn{3}{|c|}{\textbf{TOTAL}}                                                                                                                      & \textbf{4}      \\ \hline
+	\end{tabular}
+	\end{table}
+	
+    \pagebreak
+    \subsection{Gerar Relatório – Base de acompanhamento}
+    
+	\begin{table}[!h]
+	\centering
+	\caption{Processo funcional - Gerar Relatório: Base de acompanhamento}
+	\label{pf_relatorio_acompanhamento}
+	\begin{tabular}{|c|c|c|c|}
+	\hline
+	\multicolumn{4}{|c|}{Gerar Relatório – Base de acompanhamento}                                                                                                                             \\ \hline
+	\textbf{Evento disparador}                                                                                            & \textbf{Movimentos} & \textbf{Grupo de dados} & \textbf{Pontos}     \\ \hline
+	\multirow{4}{*}{\begin{tabular}[c]{@{}c@{}}Usuário deseja gerar um \\ relatório: Base de acompanhamento.\end{tabular}} & Entry              & Tipo base de acompanhamento       & 1               \\ \cline{2-4} 
+															      & Read               & Projeto                 	    	& 1               \\ \cline{2-4}
+															      & Exit               & Relatório base de acompanhamento   & 1               \\ \cline{2-4}
+															      & Exit               & Mensagens                      	& 1               \\ \hline
+	\multicolumn{3}{|c|}{\textbf{TOTAL}}                                                                                                                      & \textbf{4}      \\ \hline
+	\end{tabular}
+	\end{table}
+	
+	
+     \subsection{Alterar responsável}
+    
+	\begin{table}[!h]
+	\centering
+	\caption{Processo funcional - Alterar responsável}
+	\label{pf_alterar_responsavel}
+	\begin{tabular}{|c|c|c|c|}
+	\hline
+	\multicolumn{4}{|c|}{Alterar responsável}                                                                                                                                                  \\ \hline
+	\textbf{Evento disparador}                                                                                            & \textbf{Movimentos} & \textbf{Grupo de dados} & \textbf{Pontos}     \\ \hline
+	\multirow{3}{*}{\begin{tabular}[c]{@{}c@{}}Usuário deseja alterar \\ responsável por projeto.\end{tabular}}           & Entry              & Analista do projeto       		& 1               \\ \cline{2-4} 
+															      & Write               & Projeto                 	    	& 1               \\ \cline{2-4}
+															      & Exit               & Mensagens                      	& 1               \\ \hline
+	\multicolumn{3}{|c|}{\textbf{TOTAL}}                                                                                                                      & \textbf{3}      \\ \hline
+	\end{tabular}
+	\end{table}
+	
+	
 	
 \section{Suposições e observações}
 
@@ -129,5 +186,5 @@
 	(Tabelas \ref{pf_visualizar_relatorio_projeto}, \ref{pf_visualizar_relatorio_analista}, \ref{pf_visualizar_projetos}),
 	a funcionalidade de gerar o relatório em PDF ou XLS não foi contada por apresentar uma saída com o mesmo grupo de 
 	dados já utilizado na saída principal.
-      
+	
     \end{itemize}
