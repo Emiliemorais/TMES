@@ -42,27 +42,58 @@ pontuação dos mesmos na contagem realizada.
       \end{tabular}
       \end{table}
 
-  \subsection{ALI - Usuário}
+  \subsection{AIE - Usuário interno}
       
-      Como os casos de uso relacionados ao cadastro dos usuários não fazem parte do escopo de contagem, 
-      foram considerados apenas os atributos mais relevantes para a entidade Usuário.
+      Os usuários internos são funcionários do Ministério das Comunicações, onde foi considerado que os dados deles
+      eram obtidos com o acesso a um sistema de funcionários do próprio ministério, o que justifica a definição como AIE.
+      Como não foram encontrados na documentação os dados que são armazenados neste sistema externo,
+      foram considerados apenas os atributos mais relevantes.
       
       \begin{table}[!h]
       \centering
-      \caption{ALI - Usuário}
-      \label{ali_usuario}
+      \caption{AIE - Usuário interno}
+      \label{aie_usuario_interno}
       \begin{tabular}{|c|c|l|}
       \hline
-      \multicolumn{3}{|c|}{ALI - Usuário}                                                     \\ \hline
+      \multicolumn{3}{|c|}{AIE - Usuário interno}                                             \\ \hline
       \multicolumn{1}{|l|}{RLR's} & Tipo                         & \multicolumn{1}{c|}{DER's} \\ \hline
-      \multirow{4}{*}{1}          & \multirow{4}{*}{Obrigatório} & Nome                       \\ \cline{3-3} 
+      \multirow{5}{*}{1}          & \multirow{5}{*}{Obrigatório} & Nome                       \\ \cline{3-3} 
 				  &                              & CPF                        \\ \cline{3-3} 
 				  &                              & Login                      \\ \cline{3-3} 
-				  &                              & Senha                      \\ \hline
-      2                           & Opcional                     & Cargo                      \\ \hline
+				  &                              & Senha                      \\ \cline{3-3}
+                                  &		                 & Cargo                      \\ \hline
       \end{tabular}
       \end{table}
       
+  
+  \subsection{ALI - Usuário externo}
+    
+    Os usuários externos são caracterizados como proponentes de projetos no sistema.
+    Os dados do ALI - Usuário externo foram retirados do caso de uso UC01 - Login do Usuário, que está fora do escopo 
+    de contagem, mas foi considerado para o levantamento dos DERs.
+    
+    \begin{table}[!h]
+    \centering
+    \caption{ALI - Usuário externo}
+    \label{ali_usuario_externo}
+    \begin{tabular}{|c|c|l|}
+    \hline
+    \multicolumn{3}{|c|}{ALI - Usuário Externo}                                              \\ \hline
+    \multicolumn{1}{|l|}{RLR's} & Tipo                          & \multicolumn{1}{c|}{DER's} \\ \hline
+    \multirow{10}{*}{1}         & \multirow{10}{*}{Obrigatório} & Nome                       \\ \cline{3-3} 
+				&                               & CPF                        \\ \cline{3-3} 
+				&                               & Login                      \\ \cline{3-3} 
+				&                               & Senha                      \\ \cline{3-3} 
+				&                               & RG                         \\ \cline{3-3} 
+				&                               & Telefone                   \\ \cline{3-3} 
+				&                               & Celular                    \\ \cline{3-3} 
+				&                               & Data de nascimento         \\ \cline{3-3} 
+				&                               & E-mail                     \\ \cline{3-3} 
+				&                               & Sexo                       \\ \hline
+    \end{tabular}
+    \end{table}
+  
+  \pagebreak
   \subsection{ALI - Conversa}
     
       Uma conversa representa uma instância de comunicação entre um proponente e o Ministério das Comunicações,
@@ -76,35 +107,37 @@ pontuação dos mesmos na contagem realizada.
       \hline
       \multicolumn{3}{|c|}{ALI - Conversa}                                                    \\ \hline
       \multicolumn{1}{|l|}{RLR's} & Tipo                         & \multicolumn{1}{c|}{DER's} \\ \hline
-      \multirow{3}{*}{1}          & \multirow{3}{*}{Obrigatório} & Conteúdo da mensagem       \\ \cline{3-3} 
+      \multirow{3}{*}{1}          & \multirow{3}{*}{Obrigatório - Mensagem} & Conteúdo da mensagem       \\ \cline{3-3} 
 				  &                              & Data e hora                \\ \cline{3-3} 
 				  &                              & Remetente                  \\ \hline
-      \multirow{2}{*}{2}          & \multirow{2}{*}{Obrigatório} & Status da conversa         \\ \cline{3-3} 
+      \multirow{2}{*}{2}          & \multirow{2}{*}{Obrigatório - Conversa} & Status da conversa         \\ \cline{3-3} 
 				  &                              & Projeto relacionado        \\ \hline
       \end{tabular}
       \end{table}
       
   \subsection{Pontuação das funções de dados}
   
-      \begin{table*}[!h]
+      \begin{table}[!h]
       \centering
       \caption{Informações sobre as funções de dados}
       \label{funcoes_dados}
 	\begin{tabular}{|p{0.12\linewidth}|p{0.20\linewidth}|p{0.14\linewidth}|}
 	\hline
 	\textbf{Função} & \textbf{Complexidade} & \textbf{Pontos de função (PF)} \\
-	  \hline
-	Usuário &   & \\
 	\hline
-	Projeto & Baixa & 5 \\
+	Projeto &  &  \\
 	\hline
-	Subprojeto &  & \\
+	Usuário interno &   & \\
 	\hline
-	Relatório & & \\
+	Usuário externo &   & \\
+	\hline
+	Conversa &  & \\
 	\hline
 	\end{tabular}
-      \end{table*}
+      \end{table}
 
+\vfill
+\pagebreak
 \section{Funções de Transação}
   
  Esta seção apresenta as funções de transação identificadas, bem como suas classificações e pontuação na contagem realizada.
