@@ -15,21 +15,54 @@ pontuação dos mesmos na contagem realizada.
       \label{ali_projeto}
       \begin{tabular}{|c|c|l|}
       \hline
-      \multicolumn{3}{|c|}{\textbf{ALI - Projeto}}                                                      \\ \hline
+      \multicolumn{3}{|c|}{\textbf{ALI - Projeto (DER's obrigatórios)}}                                                      \\ \hline
       \multicolumn{1}{|l|}{RLR's} & Tipo                         & \multicolumn{1}{c|}{DER's}  \\ \hline
-      \multirow{8}{*}{1}          & \multirow{8}{*}{Obrigatório} & ID do projeto               \\ \cline{3-3} 
-				  &                              & Nome do projeto             \\ \cline{3-3} 
-				  &                              & Titular do projeto (PJ)     \\ \cline{3-3} 
-				  &                              & Data de submissão           \\ \cline{3-3} 
-				  &                              & Data de protocolo           \\ \cline{3-3} 
-				  &                              & Situação                    \\ \cline{3-3} 
-				  &                              & É consórcio                 \\ \cline{3-3} 
-				  &                              & Responsável pelo projeto    \\ \hline
-      \multirow{4}{*}{2}        & \multirow{4}{*}{Obrigatório} & Número da versão do projeto \\ \cline{3-3} 
+      \multirow{19}{*}{1}  &\multirow{19}{*}{Obrigatório} & ID do projeto               \\ \cline{3-3} 
+                          &                              & Nome do projeto             \\ \cline{3-3} 
+                          &                              & Titular do projeto (PJ)     \\ \cline{3-3} 
+                          &                              & Data de submissão           \\ \cline{3-3} 
+                          &                              & Data de protocolo           \\ \cline{3-3} 
+                          &                              & Situação                    \\ \cline{3-3} 
+                          &                              & É consórcio                 \\ \cline{3-3} 
+                          &                              & Descrição final do projeto          \\ \cline{3-3} 
+                          &                              & Data de início do projeto                  \\ \cline{3-3} 
+                          &                              & Data de conclusão do projeto                 \\ \cline{3-3}
+                          &                              & Responsável pelo projeto    \\ \cline{3-3}
+                          &   & Projeto Original               \\ \cline{3-3}
+                          &   & Título do Projeto                                   \\ \cline{3-3}
+                          &   & Número Protocolo                                    \\ \cline{3-3}
+                          &   & ID do Projeto                                       \\ \cline{3-3}
+                          &   & Município                                           \\ \cline{3-3}
+			  &   & CNPJ                                                \\ \cline{3-3}
+                          &   & Ano de Constituição                                 \\ \cline{3-3}
+                          &   & Capital Social                                      \\ \cline{3-3}
+                          &   & Representante Legal                                 \\ \cline{3-3}
+                          &   & Valor do projeto                                    \\ \cline{3-3}
+
+                          &   & UF                                                  \\ \hline   
+      \multirow{4}{*}{2}        & \multirow{4}{*}{Obrigatório- Versão} & Número da versão do projeto \\ \cline{3-3} 
 				  &                              & Data e hora da versão       \\ \cline{3-3} 
 				  &                              & Tipo de validação da versão \\ \cline{3-3} 
 				  &                              & Responsável pela versão     \\ \hline
-      \multirow{11}{*}{3}         &\multirow{11}{*}{Opcional}    & ID do subprojeto               \\ \cline{3-3} 
+      \end{tabular}
+      \end{table}
+      
+      \begin{table}[!h]
+      \centering
+      \caption{ALI - Projeto}
+      \label{ali_projeto}
+      \begin{tabular}{|c|c|l|}
+      \hline
+      \multicolumn{3}{|c|}{\textbf{ALI - Projeto (DER's opcionais)}}                                                      \\ \hline
+      \multicolumn{1}{|l|}{RLR's} & Tipo                         & \multicolumn{1}{c|}{DER's}  \\ \hline
+      \multirow{2}{*}{1}         &\multirow{2}{*}{Opcional - Relatório}    & Desenho esquemático\\ \cline{3-3}
+				  &				& Situação do relatório \\ \hline
+      \multirow{5}{*}{2}         &\multirow{5}{*}{Opcional - Portaria de Habilitação}    & Data da portaria   \\ \cline{3-3}   
+				  &						& Data de publicação   \\ \cline{3-3} 
+				  &						& Nº da portaria      \\ \cline{3-3} 
+				  &						& Portaria de habilitação        \\ \cline{3-3}
+				  &						& Data de Submissão    \\ \cline{3-3} 
+      \multirow{14}{*}{3}         &\multirow{14}{*}{Opcional- Subprojeto}    & ID do subprojeto               \\ \cline{3-3} 
 				  &                              & Título do subprojeto             \\ \cline{3-3} 
 				  &                              & Valor do subprojeto      \\ \cline{3-3} 
 				  &                              & Tipo do subprojeto          \\ \cline{3-3} 
@@ -38,9 +71,16 @@ pontuação dos mesmos na contagem realizada.
 				  &                              & Data de conclusão do subprojeto                 \\ \cline{3-3}
 				  &				 & Planilha de execução físico-financeira \\ \cline{3-3} 
 				  &  				 & Informações georreferenciadas \\ \cline{3-3}         
+				  &				 & Item \\ \cline{3-3} 
+				  &  				 & Nome \\ \cline{3-3}
+				  &				 & Notas fiscais \\ \cline{3-3} 
+				  &  				 & Informações georreferenciadas \\ \cline{3-3}         
 				  &                              & Benefícios alcançados    \\ \hline
+            \multirow{2}{*}{4}         &\multirow{2}{*}{Opcional - Atividade}    & Atividade \\ \cline{3-3}
+				  &				& Data da atividade \\ \hline
       \end{tabular}
       \end{table}
+      
 
   \subsection{ALI - Usuário}
       
@@ -98,13 +138,10 @@ pontuação dos mesmos na contagem realizada.
 	\hline
 	Projeto & Baixa & 5 \\
 	\hline
-	Subprojeto &  & \\
-	\hline
-	Relatório & & \\
-	\hline
 	\end{tabular}
       \end{table*}
-
+\vfill
+\pagebreak
 \section{Funções de Transação}
   
  Esta seção apresenta as funções de transação identificadas, bem como suas classificações e pontuação na contagem realizada.
