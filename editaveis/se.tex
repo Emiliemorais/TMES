@@ -1,0 +1,113 @@
+    \subsubsection{SE - Visualizar Relatório de Acompanhamento das Atividades do Projeto}
+  
+    Este processo elementar foi classificado como Saída Externa porque, segundo a Regra de Negócio RN63, neste relatório
+    deve conter a quantidade de projetos por situação, que é calculada na hora de gerar o relatório.
+    
+      \begin{table}[!h]
+      \centering
+      \caption{SE - Visualizar Relatório de Acompanhamento das Atividades do Projeto}
+      \label{se_visualizar_relatorio_acompanhamento}
+      \begin{tabular}{|c|l|c|}
+      \hline
+      \multicolumn{3}{|c|}{SE - Visualizar Relatório de Acompanhamento das Atividades do Projeto} \\ \hline
+      ALR                              & \multicolumn{1}{c|}{DER's}       & Total                 \\ \hline
+      \multirow{2}{*}{Projeto}         & Situação                         & 1                     \\ \cline{2-3} 
+				      & Data de submissão                & 1                     \\ \hline
+      Usuário                          & Nome do analista responsável     & 1                     \\ \hline
+      \multirow{4}{*}{DERs extras}     & Capacidade de iniciar ação       & \multirow{4}{*}{4}    \\ \cline{2-2}
+				      & Mensagem de erro                 &                       \\ \cline{2-2}
+				      & Data inicial                     &                       \\ \cline{2-2}
+				      & Data final                       &                       \\ \hline
+      \multicolumn{2}{|c|}{\textbf{TOTAL DE DER's}}                       & \textbf{7}            \\ \hline
+      \end{tabular}
+      \end{table}
+    
+  \subsubsection{SE - Visualizar Relatório de Acompanhamento das Atividades por Analista}
+      
+      Este processo elementar foi classificado como Saída Externa porque, segundo a Regra de Negócio RN63, neste relatório
+    deve conter a quantidade de projetos por situação, que é calculada na hora de gerar o relatório.
+      
+      \begin{table}[!h]
+      \centering
+      \caption{SE - Visualizar Relatório de Acompanhamento das Atividades por Analista}
+      \label{se_visualizar_relatorio_acompanhamento_analista}
+      \begin{tabular}{|c|l|c|}
+      \hline
+      \multicolumn{3}{|c|}{SE - Visualizar Relatório de Acompanhamento das Atividades por Analista} \\ \hline
+      ALR                               & \multicolumn{1}{c|}{DER's}       & Total                  \\ \hline
+      Projeto                           & Situação                         & 1                      \\ \hline
+      Usuário                           & Nome do analista responsável     & 1                      \\ \hline
+      \multirow{3}{*}{DERs extras}      & Capacidade de iniciar ação       & \multirow{3}{*}{3}     \\ \cline{2-2}
+					& Mensagem de erro                 &                        \\ \cline{2-2}
+					& Total de projetos                &                        \\ \hline
+      \textbf{TOTAL DE DER's}           &                                  & \textbf{5}             \\ \hline
+      \end{tabular}
+      \end{table}
+  
+
+    
+  \subsubsection{SE - Gerar Relatório: Base de Dados Geral}
+   
+    \begin{table}[!h]
+    \centering
+    \caption{SE - Gerar Relatório: Base de Dados Geral}
+    \label{se_base_geral}
+    \begin{tabular}{|c|l|c|}
+    \hline
+    \multicolumn{3}{|c|}{SE - Gerar Relatório: Base de Dados Geral}                 \\ \hline
+    ALR                         & \multicolumn{1}{c|}{DER's}    & Total                \\ \hline
+    \multirow{21}{*}{Projeto}   & Projeto Original              & \multirow{21}{*}{22} \\ \cline{2-2}
+				& Título do Projeto             &                      \\ \cline{2-2}
+				& Número Protocolo              &                      \\ \cline{2-2}
+				& ID do Projeto                 &                      \\ \cline{2-2}
+				& Número da Versão              &                      \\ \cline{2-2}
+				& PJ Titular do Projeto         &                      \\ \cline{2-2}
+				& CNPJ                          &                      \\ \cline{2-2}
+				& Ano de Constituição           &                      \\ \cline{2-2}
+				& Capital Social                &                      \\ \cline{2-2}
+				& Representante Legal           &                      \\ \cline{2-2}
+				& Data de Submissão             &                      \\ \cline{2-2}
+				& Data de Protocolo             &                      \\ \cline{2-2}
+				& Situação                      &                      \\ \cline{2-2}
+				& Situação da Versão            &                      \\ \cline{2-2}
+				& Situação interna              &                      \\ \cline{2-2}
+				& É consórcio empresarial       &                      \\ \cline{2-2}
+				& Data de Início                &                      \\ \cline{2-2}
+				& Data de Conclusão             &                      \\ \cline{2-2}
+				& Valor do projeto              &                      \\ \cline{2-2}
+				& Munucípio                     &                      \\ \cline{2-2}
+				& UF                            &                      \\ \hline
+    Usuário                     & Analista                      & 1                    \\ \hline
+    \multirow{4}{*}{Subprojeto} & ID Subprojeto                 & \multirow{4}{*}{4}   \\ \cline{2-2}
+				& Título do Subprojeto          &                      \\ \cline{2-2}
+				& Tipo de Subprojeto            &                      \\ \cline{2-2}
+				& Valor do Subprojeto           &                      \\ \hline
+    DERs extras                 & Capacidade de iniciar ação    & 1                    \\ \hline
+    \multicolumn{1}{|l|}{}      & Capacidade de emitir mensagem & 1                    \\ \hline
+    \multicolumn{2}{|c|}{\textbf{TOTAL DE DER's}}          & \textbf{29}         \\ \hline
+    \end{tabular}
+    \end{table}
+  
+\vfill
+\pagebreak
+  \subsubsection{SE - Gerar Relatório: Base de Acompanhamento}
+   
+    \begin{table}[!h]
+    \centering
+    \caption{SE - Gerar Relatório: Base de Acompanhamento}
+    \label{se_base_acompanhamento}
+    \begin{tabular}{|c|l|c|}
+    \hline
+    \multicolumn{3}{|c|}{SE - Gerar Relatório: Base de Acompanhamento}            \\ \hline
+    ALR                      & \multicolumn{1}{c|}{DER's}    & Total              \\ \hline
+    \multirow{5}{*}{Projeto} & Projeto Original              & \multirow{5}{*}{5} \\ \cline{2-2}
+			    & Título do Projeto             &                    \\ \cline{2-2}
+			    & Número Protocolo              &                    \\ \cline{2-2}
+			    & Data Atividade                &                    \\ \cline{2-2}
+			    & Atividade                     &                    \\ \hline
+    Usuário                  & Analista                      & 1                  \\ \hline
+    DERs extras              & Capacidade de iniciar ação    & 1                  \\ \hline
+    \multicolumn{1}{|l|}{}   & Capacidade de emitir mensagem & 1                  \\ \hline
+    \multicolumn{2}{|c|}{\textbf{TOTAL DE DER's}}          & \textbf{8}         \\ \hline
+    \end{tabular}
+    \end{table}
