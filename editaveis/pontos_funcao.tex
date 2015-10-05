@@ -27,6 +27,8 @@ pontuação dos mesmos na contagem realizada.
 				  &                              & Login                      \\ \cline{3-3} 
 				  &                              & Senha                      \\ \cline{3-3}
                                   &		                 & Cargo                      \\ \hline
+                                  
+      \multicolumn{2}{|c|}{\textbf{TOTAL}} & \textbf{5} \\ \hline
       \end{tabular}
       \end{table}
       
@@ -55,6 +57,7 @@ pontuação dos mesmos na contagem realizada.
 				&                               & Data de nascimento         \\ \cline{3-3} 
 				&                               & E-mail                     \\ \cline{3-3} 
 				&                               & Sexo                       \\ \hline
+    \multicolumn{2}{|c|}{\textbf{TOTAL}} & \textbf{10} \\ \hline
     \end{tabular}
     \end{table}
     
@@ -76,12 +79,29 @@ pontuação dos mesmos na contagem realizada.
 				  &                              & Remetente                  \\ \hline
       \multirow{2}{*}{2}          & \multirow{2}{*}{Obrigatório - Conversa} & Status da conversa         \\ \cline{3-3} 
 				  &                              & Projeto relacionado        \\ \hline
+      \multicolumn{2}{|c|}{\textbf{TOTAL}} & \textbf{5} \\ \hline
       \end{tabular}
       \end{table}
      
     \subsection{ALI - Evento}
       
-      Este ALI
+      Este ALI representa os eventos que ocorreram no projeto que são notificados ao usuário.
+      
+        \begin{table}[!h]
+	\centering
+	\caption{ALI - Evento}
+	\label{ali_evento}
+	\begin{tabular}{|c|c|l|}
+	\hline
+	\multicolumn{3}{|c|}{ALI - Evento}                                              \\ \hline
+	\multicolumn{1}{|l|}{RLR's} & Tipo                          & \multicolumn{1}{c|}{DER's} \\ \hline
+	\multirow{5}{*}{1}         & \multirow{5}{*}{Obrigatório} & Tipo da atividade          \\ \cline{3-3} 
+				    &                               & Data e hora                        \\ \cline{3-3} 
+				    &                               & Nome do usuário que executou                      \\ \cline{3-3} 
+				    &                               & Projeto que sofreu ação    \\ \hline
+	\multicolumn{2}{|c|}{\textbf{TOTAL}} & \textbf{4} \\ \hline
+	\end{tabular}
+	\end{table}      
      
     \vfill
     \pagebreak
@@ -125,6 +145,7 @@ pontuação dos mesmos na contagem realizada.
 				      &                              & Data e hora da versão       \\ \cline{3-3} 
 				      &                              & Tipo de validação da versão \\ \cline{3-3} 
 				      &                              & Responsável pela versão     \\ \hline
+	  \multicolumn{2}{|c|}{\textbf{TOTAL}} & \textbf{27} \\ \hline
 	  \end{tabular}
 	  \end{table}
       
@@ -162,6 +183,7 @@ pontuação dos mesmos na contagem realizada.
 				      &                              & Benefícios alcançados    \\ \hline
 		\multirow{2}{*}{4}         &\multirow{2}{*}{Opcional - Atividade}    & Atividade \\ \cline{3-3}
 				      &				& Data da atividade \\ \hline
+	  \multicolumn{2}{|c|}{\textbf{TOTAL}} & \textbf{22} \\ \hline
 	  \end{tabular}
 	  \end{table}
       
@@ -183,7 +205,9 @@ pontuação dos mesmos na contagem realizada.
 	\hline
 	Conversa & Baixa & 5 \\
 	\hline
-	\multicolumn{2}{|c|}{\textbf{TOTAL}} & \textbf{32} \\ \cline{3-3}
+	Evento & Baixa & 5 \\
+	\hline
+	\multicolumn{2}{|c|}{\textbf{TOTAL}} & \textbf{37} \\ \cline{3-3}
 	\hline
 	\end{tabular}
       \end{table}
@@ -262,7 +286,7 @@ pontuação dos mesmos na contagem realizada.
   \begin{tabular}{|p{0.40\linewidth}|p{0.45\linewidth}|p{0.10\linewidth}|}
   \hline
   \textbf{Funções de Dados} & \textbf{Funções de Transação} & \textbf{Total} \\ 
-  X & 100 & Y\\
+  37 & 100 & Y\\
   \hline
  
   \end{tabular}
