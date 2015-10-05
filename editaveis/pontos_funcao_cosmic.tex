@@ -345,11 +345,13 @@
 	\hline
 	\multicolumn{4}{|c|}{Gerar Relatório – Base de dados geral}                                                                                                                             \\ \hline
 	\textbf{Evento disparador}                                                                                            & \textbf{Movimentos} & \textbf{Grupo de dados} & \textbf{Pontos} \\ \hline
-	\multirow{4}{*}{\begin{tabular}[c]{@{}c@{}}Usuário deseja gerar um \\ relatório: Base de dados geral.\end{tabular}} & Entry              & Tipo base de dados geral       & 1               \\ \cline{2-4} 
+	\multirow{6}{*}{\begin{tabular}[c]{@{}c@{}}Usuário deseja gerar um \\ relatório: Base de dados geral.\end{tabular}} & Entry                & Tipo de Relatório              & 1            \\ \cline{2-4} 
 															      & Read               & Projeto                 	    & 1               \\ \cline{2-4}
+															      & Read               & Projeto(Versão)                & 1               \\ \cline{2-4}
+															      & Read               & Projeto(Subprojeto)            & 1               \\ \cline{2-4}
 															      & Exit               & Relatório base de dados geral  & 1               \\ \cline{2-4}
 															      & Exit               & Mensagens                      & 1               \\ \hline
-	\multicolumn{3}{|c|}{\textbf{TOTAL}}                                                                                                                      & \textbf{4}      \\ \hline
+	\multicolumn{3}{|c|}{\textbf{TOTAL}}                                                                                                                      & \textbf{6}      \\ \hline
 	\end{tabular}
 	\end{table}
 	
@@ -364,11 +366,12 @@
 	\hline
 	\multicolumn{4}{|c|}{Gerar Relatório – Base de acompanhamento}                                                                                                                             \\ \hline
 	\textbf{Evento disparador}                                                                                            & \textbf{Movimentos} & \textbf{Grupo de dados} & \textbf{Pontos}     \\ \hline
-	\multirow{4}{*}{\begin{tabular}[c]{@{}c@{}}Usuário deseja gerar um \\ relatório: Base de acompanhamento.\end{tabular}} & Entry              & Tipo base de acompanhamento       & 1               \\ \cline{2-4} 
+	\multirow{5}{*}{\begin{tabular}[c]{@{}c@{}}Usuário deseja gerar um \\ relatório: Base de acompanhamento.\end{tabular}} & Entry              & Tipo de Relatório		        & 1               \\ \cline{2-4} 
 															      & Read               & Projeto                 	    	& 1               \\ \cline{2-4}
+															      & Read               & Projeto(Atividade)                 & 1               \\ \cline{2-4}
 															      & Exit               & Relatório base de acompanhamento   & 1               \\ \cline{2-4}
 															      & Exit               & Mensagens                      	& 1               \\ \hline
-	\multicolumn{3}{|c|}{\textbf{TOTAL}}                                                                                                                      & \textbf{4}      \\ \hline
+	\multicolumn{3}{|c|}{\textbf{TOTAL}}                                                                                                                      & \textbf{5}      \\ \hline
 	\end{tabular}
 	\end{table}
 	
@@ -383,7 +386,7 @@
 	\hline
 	\multicolumn{4}{|c|}{Alterar responsável}                                                                                                                                                  \\ \hline
 	\textbf{Evento disparador}                                                                                            & \textbf{Movimentos} & \textbf{Grupo de dados} & \textbf{Pontos}     \\ \hline
-	\multirow{3}{*}{\begin{tabular}[c]{@{}c@{}}Usuário deseja alterar \\ responsável por projeto.\end{tabular}}           & Entry              & Analista do projeto       		& 1               \\ \cline{2-4} 
+	\multirow{3}{*}{\begin{tabular}[c]{@{}c@{}}Usuário deseja alterar \\ responsável por projeto.\end{tabular}}           & Entry              & Analista do projeto       		& 1               \\ \cline{2-4}
 															      & Write               & Projeto                 	    	& 1               \\ \cline{2-4}
 															      & Exit               & Mensagens                      	& 1               \\ \hline
 	\multicolumn{3}{|c|}{\textbf{TOTAL}}                                                                                                                      & \textbf{3}      \\ \hline
@@ -403,7 +406,7 @@
 	\multicolumn{4}{|c|}{Suspender Análise}                                                                                                                                                  \\ \hline
 	\textbf{Evento disparador}                                                                                            & \textbf{Movimentos} & \textbf{Grupo de dados} & \textbf{Pontos}     \\ \hline
 	\multirow{3}{*}{\begin{tabular}[c]{@{}c@{}}Usuário deseja suspender \\ análise de um projeto.\end{tabular}}           & Entry              & Motivo da suspensão       		& 1               \\ \cline{2-4} 
-															      & Write               & Projeto                 	    	& 1               \\ \cline{2-4}
+															      & Write              & Projeto                 	    	& 1               \\ \cline{2-4}
 															      & Exit               & Mensagens                      	& 1               \\ \hline
 	\multicolumn{3}{|c|}{\textbf{TOTAL}}                                                                                                                      & \textbf{3}      \\ \hline
 	\end{tabular}
@@ -421,11 +424,12 @@
 	\hline
 	\multicolumn{4}{|c|}{Solicitar informações para alterações de projeto}                                                                                                                                                  \\ \hline
 	\textbf{Evento disparador}                                                                                            & \textbf{Movimentos} & \textbf{Grupo de dados} & \textbf{Pontos}     \\ \hline
-	\multirow{3}{*}{\begin{tabular}[c]{@{}c@{}}Usuário deseja solicitar informações \\ para alteração de projeto.\end{tabular}}           & Entry              & solicitação de alteração      		& 1               \\ \cline{2-4} 
-																	      & Write               & Conversa                 	    	& 1               \\ \cline{2-4}
-																	      & Write               & Projeto                	    	& 1               \\ \cline{2-4}
+	\multirow{5}{*}{\begin{tabular}[c]{@{}c@{}}Usuário deseja solicitar informações \\ para alteração de projeto.\end{tabular}}           & Entry              & solicitação de alteração      	& 1               \\ \cline{2-4} 
+																	      & Write               & Conversa(Mensagem)                & 1               \\ \cline{2-4}
+																	      & Write               & Projeto(Versão)               	& 1               \\ \cline{2-4}
+																	      & Write               & Evento               	        & 1               \\ \cline{2-4}
 																	      & Exit               & Mensagens                      	& 1               \\ \hline
-	\multicolumn{3}{|c|}{\textbf{TOTAL}}                                                                                                                      & \textbf{4}      \\ \hline
+	\multicolumn{3}{|c|}{\textbf{TOTAL}}                                                                                                                      & \textbf{5}      \\ \hline
 	\end{tabular}
 	\end{table}
 	
@@ -442,8 +446,8 @@
 	\multicolumn{4}{|c|}{ Iniciar troca de mensagens}                                                                                                                                                  \\ \hline
 	\textbf{Evento disparador}                                                                                            & \textbf{Movimentos} & \textbf{Grupo de dados} & \textbf{Pontos}     \\ \hline
 	\multirow{4}{*}{\begin{tabular}[c]{@{}c@{}}Usuário deseja iniciar uma \\ troca de mensagens.\end{tabular}}           & Entry              &\begin{tabular}[c]{@{}c@{}} solicitação de troca \\ de mensagens\end{tabular}  & 1               \\ \cline{2-4} 
-																	      & Write               & Conversa                 	    	& 1               \\ \cline{2-4}
-																	      & Read              & Conversa                 	    	& 1               \\ \cline{2-4}
+																	      & Write               & Conversa(Mensagem)                & 1               \\ \cline{2-4}
+																	      & Read              & Conversa(Mendagem)                 	& 1               \\ \cline{2-4}
 																	      & Exit               & Mensagens                      	& 1               \\ \hline
 	\multicolumn{3}{|c|}{\textbf{TOTAL}}                                                                                                                      & \textbf{4}      \\ \hline
 	\end{tabular}
@@ -462,7 +466,7 @@
 	\multicolumn{4}{|c|}{Visualizar histórico de mensagens}                                                                                                                                                  \\ \hline
 	\textbf{Evento disparador}                                                                                            & \textbf{Movimentos} & \textbf{Grupo de dados} & \textbf{Pontos}     \\ \hline
 	\multirow{3}{*}{\begin{tabular}[c]{@{}c@{}}Usuário deseja visualizar um \\ histórico de mensagens.\end{tabular}}           	      & Entry              &\begin{tabular}[c]{@{}c@{}} solicitação de visualização \\ de mensagens\end{tabular}  & 1               \\ \cline{2-4} 
-																	      & Read              & Conversa                 	    	& 1               \\ \cline{2-4}
+																	      & Read              & Conversa(Mensagem)                	    	& 1               \\ \cline{2-4}
 																	      & Exit               & Mensagens                      	& 1               \\ \hline
 	\multicolumn{3}{|c|}{\textbf{TOTAL}}                                                                                                                      & \textbf{3}      \\ \hline
 	\end{tabular}
@@ -481,7 +485,7 @@
 	\multicolumn{4}{|c|}{Encerrar troca de mensagens}                                                                                                                                                  \\ \hline
 	\textbf{Evento disparador}                                                                                            & \textbf{Movimentos} & \textbf{Grupo de dados} & \textbf{Pontos}     \\ \hline
 	\multirow{3}{*}{\begin{tabular}[c]{@{}c@{}}Usuário deseja iniciar uma \\ troca de mensagens.\end{tabular}}           & Entry              &\begin{tabular}[c]{@{}c@{}} solicitação de troca \\ de mensagens\end{tabular}  & 1               \\ \cline{2-4} 
-																	      & Write               & Conversa                 	    	& 1               \\ \cline{2-4}
+																	      & Write               & Conversa(Conversa)                 	    	& 1               \\ \cline{2-4}
 																	      & Exit               & Mensagens                      	& 1               \\ \hline
 	\multicolumn{3}{|c|}{\textbf{TOTAL}}                                                                                                                      & \textbf{3}      \\ \hline
 	\end{tabular}
