@@ -6,42 +6,7 @@
 
 Esta seção apresenta os Arquivos Lógicos Internos (ALI) e Arquivos de Interface Externa (AIE) levantados, bem como a 
 pontuação dos mesmos na contagem realizada.
-
-  \subsection{ALI - Projeto}
-  
-      \begin{table}[!h]
-      \centering
-      \caption{ALI - Projeto}
-      \label{ali_projeto}
-      \begin{tabular}{|c|c|l|}
-      \hline
-      \multicolumn{3}{|c|}{\textbf{ALI - Projeto}}                                                      \\ \hline
-      \multicolumn{1}{|l|}{RLR's} & Tipo                         & \multicolumn{1}{c|}{DER's}  \\ \hline
-      \multirow{8}{*}{1}          & \multirow{8}{*}{Obrigatório} & ID do projeto               \\ \cline{3-3} 
-				  &                              & Nome do projeto             \\ \cline{3-3} 
-				  &                              & Titular do projeto (PJ)     \\ \cline{3-3} 
-				  &                              & Data de submissão           \\ \cline{3-3} 
-				  &                              & Data de protocolo           \\ \cline{3-3} 
-				  &                              & Situação                    \\ \cline{3-3} 
-				  &                              & É consórcio                 \\ \cline{3-3} 
-				  &                              & Responsável pelo projeto    \\ \hline
-      \multirow{4}{*}{2}        & \multirow{4}{*}{Obrigatório} & Número da versão do projeto \\ \cline{3-3} 
-				  &                              & Data e hora da versão       \\ \cline{3-3} 
-				  &                              & Tipo de validação da versão \\ \cline{3-3} 
-				  &                              & Responsável pela versão     \\ \hline
-      \multirow{11}{*}{3}         &\multirow{11}{*}{Opcional}    & ID do subprojeto               \\ \cline{3-3} 
-				  &                              & Título do subprojeto             \\ \cline{3-3} 
-				  &                              & Valor do subprojeto      \\ \cline{3-3} 
-				  &                              & Tipo do subprojeto          \\ \cline{3-3} 
-				  &                              & Descrição final do subprojeto          \\ \cline{3-3} 
-				  &                              & Data de início do subprojeto                  \\ \cline{3-3} 
-				  &                              & Data de conclusão do subprojeto                 \\ \cline{3-3}
-				  &				 & Planilha de execução físico-financeira \\ \cline{3-3} 
-				  &  				 & Informações georreferenciadas \\ \cline{3-3}         
-				  &                              & Benefícios alcançados    \\ \hline
-      \end{tabular}
-      \end{table}
-
+     
   \subsection{AIE - Usuário interno}
       
       Os usuários internos são funcionários do Ministério das Comunicações, onde foi considerado que os dados deles
@@ -92,9 +57,8 @@ pontuação dos mesmos na contagem realizada.
 				&                               & Sexo                       \\ \hline
     \end{tabular}
     \end{table}
-  
-  \pagebreak
-  \subsection{ALI - Conversa}
+    
+      \subsection{ALI - Conversa}
     
       Uma conversa representa uma instância de comunicação entre um proponente e o Ministério das Comunicações,
       onde pode haver várias mensagens.
@@ -114,6 +78,92 @@ pontuação dos mesmos na contagem realizada.
 				  &                              & Projeto relacionado        \\ \hline
       \end{tabular}
       \end{table}
+     
+    \subsection{ALI - Evento}
+      
+      Este ALI
+     
+    \vfill
+    \pagebreak
+    \subsection{ALI - Projeto}
+      
+      \subsubsection*{DERs obrigatórios}
+      
+	  \begin{table}[!h]
+	  \centering
+	  \caption{ALI - Projeto}
+	  \label{ali_projeto}
+	  \begin{tabular}{|c|c|l|}
+	  \hline
+	  \multicolumn{3}{|c|}{\textbf{ALI - Projeto (DER's obrigatórios)}}                                                      \\ \hline
+	  \multicolumn{1}{|l|}{RLR's} & Tipo                         & \multicolumn{1}{c|}{DER's}  \\ \hline
+	  \multirow{20}{*}{1}  &\multirow{20}{*}{Obrigatório} & ID do projeto               \\ \cline{3-3} 
+			      &                              & Nome do projeto             \\ \cline{3-3} 
+			      &                              & Titular do projeto (PJ)     \\ \cline{3-3} 
+			      &                              & Data de submissão           \\ \cline{3-3}
+			      &				     & Data limite de submissão    \\ \cline{3-3}
+			      &                              & Data de protocolo           \\ \cline{3-3} 
+			      &                              & Situação                    \\ \cline{3-3} 
+			      &                              & É consórcio                 \\ \cline{3-3} 
+			      &                              & Descrição final do projeto          \\ \cline{3-3} 
+			      &                              & Data de início do projeto                  \\ \cline{3-3} 
+			      &                              & Data de conclusão do projeto                 \\ \cline{3-3}
+			      &                              & Responsável pelo projeto    \\ \cline{3-3}
+			      &   & Projeto Original               \\ \cline{3-3}
+			      &   & Título do Projeto                                   \\ \cline{3-3}
+			      &   & Número Protocolo                                    \\ \cline{3-3}
+			      &   & ID do Projeto                                       \\ \cline{3-3}
+			      &   & Município                                           \\ \cline{3-3}
+			      &   & CNPJ                                                \\ \cline{3-3}
+			      &   & Ano de Constituição                                 \\ \cline{3-3}
+			      &   & Capital Social                                      \\ \cline{3-3}
+			      &   & Representante Legal                                 \\ \cline{3-3}
+			      &   & Valor do projeto                                    \\ \cline{3-3}
+
+			      &   & UF                                                  \\ \hline   
+	  \multirow{4}{*}{2}        & \multirow{4}{*}{Obrigatório- Versão} & Número da versão do projeto \\ \cline{3-3} 
+				      &                              & Data e hora da versão       \\ \cline{3-3} 
+				      &                              & Tipo de validação da versão \\ \cline{3-3} 
+				      &                              & Responsável pela versão     \\ \hline
+	  \end{tabular}
+	  \end{table}
+      
+      \vfill
+      \pagebreak
+      \subsubsection*{DERs opcionais}
+      
+	  \begin{table}[!h]
+	  \centering
+	  \caption{ALI - Projeto}
+	  \label{ali_projeto}
+	  \begin{tabular}{|c|c|l|}
+	  \hline
+	  \multicolumn{3}{|c|}{\textbf{ALI - Projeto (DER's opcionais)}}                                                      \\ \hline
+	  \multicolumn{1}{|l|}{RLR's} & Tipo                         & \multicolumn{1}{c|}{DER's}  \\ \hline
+	  \multirow{2}{*}{1}         &\multirow{2}{*}{Opcional - Relatório}    & Desenho esquemático\\ \cline{3-3}
+				      &				& Situação do relatório \\ \hline
+	  \multirow{5}{*}{2}         &\multirow{5}{*}{Opcional - Portaria de Habilitação}    & Data da portaria   \\ \cline{3-3}   
+				      &						& Data de publicação   \\ \cline{3-3} 
+				      &						& Nº da portaria      \\ \cline{3-3} 
+				      &						& Portaria de habilitação        \\ \hline
+	  \multirow{14}{*}{3}         &\multirow{14}{*}{Opcional- Subprojeto}    & ID do subprojeto               \\ \cline{3-3} 
+				      &                              & Título do subprojeto             \\ \cline{3-3} 
+				      &                              & Valor do subprojeto      \\ \cline{3-3} 
+				      &                              & Tipo do subprojeto          \\ \cline{3-3} 
+				      &                              & Descrição final do subprojeto          \\ \cline{3-3} 
+				      &                              & Data de início do subprojeto                  \\ \cline{3-3} 
+				      &                              & Data de conclusão do subprojeto                 \\ \cline{3-3}
+				      &				 & Planilha de execução físico-financeira \\ \cline{3-3} 
+				      &  				 & Informações georreferenciadas \\ \cline{3-3}         
+				      &				 & Item \\ \cline{3-3} 
+				      &  				 & Nome \\ \cline{3-3}
+				      &				 & Notas fiscais \\ \cline{3-3} 
+				      &  				 & Informações georreferenciadas \\ \cline{3-3}         
+				      &                              & Benefícios alcançados    \\ \hline
+		\multirow{2}{*}{4}         &\multirow{2}{*}{Opcional - Atividade}    & Atividade \\ \cline{3-3}
+				      &				& Data da atividade \\ \hline
+	  \end{tabular}
+	  \end{table}
       
   \subsection{Pontuação das funções de dados}
   
@@ -125,13 +175,15 @@ pontuação dos mesmos na contagem realizada.
 	\hline
 	\textbf{Função} & \textbf{Complexidade} & \textbf{Pontos de função (PF)} \\
 	\hline
-	Projeto &  &  \\
+	Usuário interno & Baixa & 5 \\
 	\hline
-	Usuário interno &   & \\
+	Usuário externo & Baixa & 7 \\
 	\hline
-	Usuário externo &   & \\
+	Projeto & Alta & 15 \\
 	\hline
-	Conversa &  & \\
+	Conversa & Baixa & 5 \\
+	\hline
+	\multicolumn{2}{|c|}{\textbf{TOTAL}} & \textbf{32} \\ \cline{3-3}
 	\hline
 	\end{tabular}
       \end{table}
