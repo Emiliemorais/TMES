@@ -42,10 +42,11 @@
       \multicolumn{4}{|c|}{Cadastrar Portaria de Habilitação}                                                                                                                            \\ \hline
       \textbf{Evento disparador}                                                                                                        & \textbf{Movimentos} & \textbf{Grupo de dados} & \textbf{Pontos} \\ \hline
       \multirow{4}{*}{\begin{tabular}[c]{@{}c@{}}Usuário deseja realizar o upload\\ de uma portaria de habilitação, \\assim seleciona um projeto.\end{tabular}} & Entry               & Projeto   & 1               \\ \cline{2-4} 
-																      & Write & Projeto                 & 1               \\ \cline{2-4} 
-																      & Exit                & Projeto    & 1               \\ \cline{2-4}
+																      & Write & Projeto(Portaria de Habilitação)                 & 1               \\ \cline{2-4} 
+																      & Write & Projeto(Relatório)                 & 1               \\ \cline{2-4} 
+																      & Exit                & Projeto(Portaria de Habilitação)    & 1               \\ \cline{2-4}
 																      & Exit                & Mensagens               & 1               \\ \hline
-    \multicolumn{3}{|c|}{\textbf{TOTAL }}                                                                                                                                     & \textbf{4}               \\ \hline
+    \multicolumn{3}{|c|}{\textbf{TOTAL }}                                                                                                                                     & \textbf{5}               \\ \hline
     \end{tabular}
     \end{table}
   
@@ -59,11 +60,11 @@
       \hline
       \multicolumn{4}{|c|}{Submeter Relatório Parcial}                                                                                                                            \\ \hline
       \textbf{Evento disparador}                                                                                                        & \textbf{Movimentos} & \textbf{Grupo de dados} & \textbf{Pontos} \\ \hline
-      \multirow{4}{*}{\begin{tabular}[c]{@{}c@{}}Usuário deseja enviar um relatório parcial.\end{tabular}} & Entry               & Solicita o envio   & 1               \\ \cline{2-4} 
-																      & Read & Projeto                 & 1               \\ \cline{2-4} 
-																      & Read & Subprojeto                 & 1               \\ \cline{2-4} 
-																      & Write                & Projeto    & 1               \\ \cline{2-4}
-																      & Write                & Subprojeto    & 1               \\ \cline{2-4}
+      \multirow{4}{*}{\begin{tabular}[c]{@{}c@{}}Usuário deseja enviar um relatório parcial.\end{tabular}} & Entry               & Projeto   & 1               \\ \cline{2-4} 
+																      & Read & Projeto(Relatório)                 & 1               \\ \cline{2-4} 
+																      & Read & Projeto(Subprojeto)                 & 1               \\ \cline{2-4} 
+																      & Write                & Projeto(Relatório)    & 1               \\ \cline{2-4}
+																      & Write                & Projeto(Subprojeto)    & 1               \\ \cline{2-4}
 																      & Exit                & Mensagens               & 1               \\ \hline
     \multicolumn{3}{|c|}{\textbf{TOTAL }}                                                                                                                                     & \textbf{6}               \\ \hline
     \end{tabular}
@@ -80,11 +81,12 @@
       \hline
       \multicolumn{4}{|c|}{Visualizar Relatório Parcial}                                                                                                                            \\ \hline
       \textbf{Evento disparador}                                                                                                        & \textbf{Movimentos} & \textbf{Grupo de dados} & \textbf{Pontos} \\ \hline
-      \multirow{4}{*}{\begin{tabular}[c]{@{}c@{}}Usuário deseja visualizar um\\ relatório parcial.\end{tabular}} & Entry               & Solicita a visualização   & 1               \\ \cline{2-4} 
-																      & Read & Projeto                 & 1               \\ \cline{2-4} 
-																      & Read & Subrojeto                 & 1               \\ \cline{2-4} 
-																      & Exit                & Relatório               & 1               \\ \hline
-    \multicolumn{3}{|c|}{\textbf{TOTAL }}                                                                                                                                     & \textbf{4}               \\ \hline
+      \multirow{4}{*}{\begin{tabular}[c]{@{}c@{}}Usuário deseja visualizar um\\ relatório parcial.\end{tabular}} & Entry               & Projeto & 1               \\ \cline{2-4} 
+																      & Read & Projeto(Relatório)                 & 1               \\ \cline{2-4} 
+																      & Read & Projeto(Subprojeto)                 & 1               \\ \cline{2-4} 
+																      & Exit                & Projeto(Relatório)               & 1               \\ \hline
+																      & Exit                & Projeto(Subprojeto)               & 1               \\ \hline
+    \multicolumn{3}{|c|}{\textbf{TOTAL }}                                                                                                                                     & \textbf{5}               \\ \hline
     \end{tabular}
     \end{table}
     \pagebreak
@@ -98,13 +100,15 @@
       \hline
       \multicolumn{4}{|c|}{Cadastrar Relatório Final}                                                                                                                            \\ \hline
       \textbf{Evento disparador}                                                                                                        & \textbf{Movimentos} & \textbf{Grupo de dados} & \textbf{Pontos} \\ \hline
-      \multirow{4}{*}{\begin{tabular}[c]{@{}c@{}}Usuário deseja registrar\\ um relatório final.\end{tabular}} & Entry               & Solicita a visualização   & 1               \\ \cline{2-4} 
-																      & Read & Projeto                 & 1               \\ \cline{2-4} 
-																      & Read & Subrojeto                 & 1               \\ \cline{2-4} 
+      \multirow{4}{*}{\begin{tabular}[c]{@{}c@{}}Usuário deseja registrar\\ um relatório final.\end{tabular}} & Entry               & Projeto   & 1               \\ \cline{2-4} 
+																      & Read & Projeto                & 1               \\ \cline{2-4} 
+																      & Read & Projeto(Relatório)                 & 1               \\ \cline{2-4} 
+																      & Read & Projeto(Subprojeto)                 & 1               \\ \cline{2-4} 
 																      & Write                & Projeto               & 1               \\ \cline{2-4}
-																      & Write                & Subprojeto               & 1               \\ \cline{2-4}
+																      & Write                & Projeto(Relatório)               & 1               \\ \cline{2-4}
+																      & Write                & Projeto(Subprojeto)               & 1               \\ \cline{2-4}
 																      & Exit                & Mensagens               & 1               \\ \hline
-    \multicolumn{3}{|c|}{\textbf{TOTAL }}                                                                                                                                     & \textbf{6}               \\ \hline
+    \multicolumn{3}{|c|}{\textbf{TOTAL }}                                                                                                                                     & \textbf{8}               \\ \hline
     \end{tabular}
     \end{table}
     
@@ -118,13 +122,15 @@
       \hline
       \multicolumn{4}{|c|}{Alterar Relatório Final}                                                                                                                            \\ \hline
       \textbf{Evento disparador}                                                                                                        & \textbf{Movimentos} & \textbf{Grupo de dados} & \textbf{Pontos} \\ \hline
-      \multirow{4}{*}{\begin{tabular}[c]{@{}c@{}}Usuário deseja alterar \\um relatório final enviado.\end{tabular}} & Entry               & Solicita a alteração   & 1               \\ \cline{2-4} 
-																      & Read & Projeto                 & 1               \\ \cline{2-4} 
-																      & Read & Subrojeto                 & 1               \\ \cline{2-4} 
+      \multirow{4}{*}{\begin{tabular}[c]{@{}c@{}}Usuário deseja alterar \\um relatório final enviado.\end{tabular}} & Entry               & Projeto   & 1               \\ \cline{2-4} 
+																      & Read & Projeto                & 1               \\ \cline{2-4} 
+																      & Read & Projeto(Relatório)                 & 1               \\ \cline{2-4} 
+																      & Read & Projeto(Subprojeto)                 & 1               \\ \cline{2-4} 
 																      & Write                & Projeto               & 1               \\ \cline{2-4}
-														      & Write                & Subprojeto               & 1               \\ \cline{2-4}
+																      & Write                & Projeto(Relatório)               & 1               \\ \cline{2-4}
+																      & Write                & Projeto(Subprojeto)               & 1               \\ \cline{2-4}
 																      & Exit                & Mensagens               & 1               \\ \hline
-    \multicolumn{3}{|c|}{\textbf{TOTAL }}                                                                                                                                     & \textbf{6}               \\ \hline
+    \multicolumn{3}{|c|}{\textbf{TOTAL }}                                                                                                                                     & \textbf{8}               \\ \hline
     \end{tabular}
     \end{table}
   \pagebreak
@@ -140,9 +146,13 @@
       \textbf{Evento disparador}                                                                                                        & \textbf{Movimentos} & \textbf{Grupo de dados} & \textbf{Pontos} \\ \hline
       \multirow{4}{*}{\begin{tabular}[c]{@{}c@{}}Usuário deseja visualizar\\ um relatório final enviado.\end{tabular}} & Entry               & Solicita a visualização   & 1               \\ \cline{2-4} 
 																      & Read & Projeto                 & 1               \\ \cline{2-4} 
-																      & Read & Subrojeto                 & 1               \\ \cline{2-4} 
+																      & Read & Projeto(Subprojeto)                 & 1               \\ \cline{2-4} 		
+																      & Read & Projeto(Relatório) 	& 1               \\ \cline{2-4} 
+																      & Exit & Projeto                 & 1               \\ \cline{2-4} 
+																      & Exit & Projeto(Subprojeto)                 & 1               \\ \cline{2-4} 		
+																      & Exit & Projeto(Relatório) 	& 1               \\ \cline{2-4} 
 																      & Exit                & Mensagens               & 1               \\ \hline
-    \multicolumn{3}{|c|}{\textbf{TOTAL }}                                                                                                                                     & \textbf{4}               \\ \hline
+    \multicolumn{3}{|c|}{\textbf{TOTAL }}                                                                                                                                     & \textbf{8}               \\ \hline
     \end{tabular}
     \end{table}
     
@@ -157,8 +167,8 @@
       \hline
       \multicolumn{4}{|c|}{Visualizar Portaria de Habilitação}                                                                                                                            \\ \hline
       \textbf{Evento disparador}                                                                                                        & \textbf{Movimentos} & \textbf{Grupo de dados} & \textbf{Pontos} \\ \hline
-      \multirow{4}{*}{\begin{tabular}[c]{@{}c@{}}Usuário deseja visualizar a \\portaria de habilitação do projeto.\end{tabular}} & Entry               & Solicita a visualização   & 1               \\ \cline{2-4} 
-																      & Read & Projeto                 & 1               \\ \cline{2-4} 
+      \multirow{4}{*}{\begin{tabular}[c]{@{}c@{}}Usuário deseja visualizar a \\portaria de habilitação do projeto.\end{tabular}} & Entry               & Projeto   & 1               \\ \cline{2-4} 
+																      & Read & Projeto(Portaria de Habilitação)     & 1               \\ \cline{2-4} 
 																      & Exit                & Projeto               & 1               \\ \hline
     \multicolumn{3}{|c|}{\textbf{TOTAL }}                                                                                                                                     & \textbf{3}               \\ \hline
     \end{tabular}
@@ -174,10 +184,11 @@
       \hline
       \multicolumn{4}{|c|}{Visualizar o histórico de relatórios}                                                                                                                            \\ \hline
       \textbf{Evento disparador}                                                                                                        & \textbf{Movimentos} & \textbf{Grupo de dados} & \textbf{Pontos} \\ \hline
-      \multirow{4}{*}{\begin{tabular}[c]{@{}c@{}}Usuário deseja visualizar os relatórios.\end{tabular}} & Entry               & Solicita a visualização   & 1               \\ \cline{2-4} 
+      \multirow{4}{*}{\begin{tabular}[c]{@{}c@{}}Usuário deseja visualizar os relatórios.\end{tabular}} & Entry               & Projeto   & 1               \\ \cline{2-4} 
 																      & Read & Projeto                 & 1               \\ \cline{2-4} 
+																      & Read & Projeto(Relatório)                 & 1               \\ \cline{2-4} 
 																      & Exit                & Projeto               & 1               \\ \hline
-    \multicolumn{3}{|c|}{\textbf{TOTAL }}                                                                                                                                     & \textbf{3}               \\ \hline
+    \multicolumn{3}{|c|}{\textbf{TOTAL }}                                                                                                                                     & \textbf{4}               \\ \hline
     \end{tabular}
     \end{table}
     
@@ -194,8 +205,8 @@
       \hline
       \multicolumn{4}{|c|}{Aceitar relatório}                                                                                                                            \\ \hline
       \textbf{Evento disparador}                                                                                                        & \textbf{Movimentos} & \textbf{Grupo de dados} & \textbf{Pontos} \\ \hline
-      \multirow{4}{*}{\begin{tabular}[c]{@{}c@{}}Usuário deseja aceitar um relatório.\end{tabular}} & Entry               & Solicita o aceite   & 1               \\ \cline{2-4} 
-																      & Write & Projeto                 & 1               \\ \cline{2-4} 
+      \multirow{4}{*}{\begin{tabular}[c]{@{}c@{}}Usuário deseja aceitar um relatório.\end{tabular}} & Entry               & Relatório   & 1               \\ \cline{2-4} 
+																      & Write & Projeto(Relatório)                 & 1               \\ \cline{2-4} 
 																      & Exit                & Mensagens & 1               \\ \hline
     \multicolumn{3}{|c|}{\textbf{TOTAL }}                                                                                                                                     & \textbf{3}               \\ \hline
     \end{tabular}
@@ -210,8 +221,8 @@
       \hline
       \multicolumn{4}{|c|}{Recusar relatório}                                                                                                                            \\ \hline
       \textbf{Evento disparador}                                                                                                        & \textbf{Movimentos} & \textbf{Grupo de dados} & \textbf{Pontos} \\ \hline
-      \multirow{4}{*}{\begin{tabular}[c]{@{}c@{}}Usuário deseja aceitar um relatório.\end{tabular}} & Entry               & Solicita o aceite   & 1               \\ \cline{2-4} 
-																      & Write & Projeto                 & 1               \\ \cline{2-4} 
+      \multirow{4}{*}{\begin{tabular}[c]{@{}c@{}}Usuário deseja aceitar um relatório.\end{tabular}} & Entry               & Relatório   & 1               \\ \cline{2-4} 
+																      & Write & Projeto(Relatório)                 & 1               \\ \cline{2-4} 
 																      & Exit                & Mensagens & 1               \\ \hline
     \multicolumn{3}{|c|}{\textbf{TOTAL }}                                                                                                                                     & \textbf{3}               \\ \hline
     \end{tabular}
