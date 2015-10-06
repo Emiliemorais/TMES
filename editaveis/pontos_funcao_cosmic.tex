@@ -70,6 +70,8 @@
     \end{tabular}
     \end{table}
     
+       \vfill
+      \pagebreak
       
      \subsection{Visualizar Relatório Parcial}
   
@@ -89,7 +91,7 @@
     \multicolumn{3}{|c|}{\textbf{TOTAL }}                                                                                                                                     & \textbf{5}               \\ \hline
     \end{tabular}
     \end{table}
-    \pagebreak
+    
     \subsection{Cadastrar Relatório Final}
   
       \begin{table}[!h]
@@ -355,7 +357,6 @@
 	\end{tabular}
 	\end{table}
 	
-    \pagebreak
     \subsection{Gerar Relatório – Base de acompanhamento}
     
 	\begin{table}[!h]
@@ -366,7 +367,7 @@
 	\hline
 	\multicolumn{4}{|c|}{Gerar Relatório – Base de acompanhamento}                                                                                                                             \\ \hline
 	\textbf{Evento disparador}                                                                                            & \textbf{Movimentos} & \textbf{Grupo de dados} & \textbf{Pontos}     \\ \hline
-	\multirow{5}{*}{\begin{tabular}[c]{@{}c@{}}Usuário deseja gerar um \\ relatório: Base de acompanhamento.\end{tabular}} & Entry              & Tipo de Relatório		        & 1               \\ \cline{2-4} 
+	\multirow{5}{*}{\begin{tabular}[c]{@{}c@{}}Usuário deseja \\gerar um  relatório: \\Base de acompanhamento.\end{tabular}} & Entry              & Tipo de Relatório		        & 1               \\ \cline{2-4} 
 															      & Read               & Projeto                 	    	& 1               \\ \cline{2-4}
 															      & Read               & Projeto(Atividade)                 & 1               \\ \cline{2-4}
 															      & Exit               & Relatório base de acompanhamento   & 1               \\ \cline{2-4}
@@ -375,7 +376,8 @@
 	\end{tabular}
 	\end{table}
 	
-	
+	   \vfill
+      \pagebreak
      \subsection{Alterar responsável}
     
 	\begin{table}[!h]
@@ -432,28 +434,12 @@
 	\multicolumn{3}{|c|}{\textbf{TOTAL}}                                                                                                                      & \textbf{5}      \\ \hline
 	\end{tabular}
 	\end{table}
-	
+
+
+				
       \vfill
       \pagebreak
-      \subsection{Iniciar troca de mensagens}
-    
-	\begin{table}[!h]
-	\centering
-	\caption{Processo funcional -  Iniciar troca de mensagens}
-	\label{pf_troca_mensagem}
-	\begin{tabular}{|c|c|c|c|}
-	\hline
-	\multicolumn{4}{|c|}{ Iniciar troca de mensagens}                                                                                                                                                  \\ \hline
-	\textbf{Evento disparador}                                                                                            & \textbf{Movimentos} & \textbf{Grupo de dados} & \textbf{Pontos}     \\ \hline
-	\multirow{4}{*}{\begin{tabular}[c]{@{}c@{}}Usuário deseja iniciar uma \\ troca de mensagens.\end{tabular}}           & Entry              &\begin{tabular}[c]{@{}c@{}} solicitação de troca \\ de mensagens\end{tabular}  & 1               \\ \cline{2-4} 
-																	      & Write               & Conversa(Mensagem)                & 1               \\ \cline{2-4}
-																	      & Read              & Conversa(Mendagem)                 	& 1               \\ \cline{2-4}
-																	      & Exit               & Mensagens                      	& 1               \\ \hline
-	\multicolumn{3}{|c|}{\textbf{TOTAL}}                                                                                                                      & \textbf{4}      \\ \hline
-	\end{tabular}
-	\end{table}
-	
-	
+
 
       \subsection{Visualizar histórico de mensagens}
     
@@ -472,8 +458,24 @@
 	\end{tabular}
 	\end{table}
 	
-	
-	
+
+	      \subsection{Iniciar troca de mensagens}
+    
+	\begin{table}[!h]
+	\centering
+	\caption{Processo funcional -  Iniciar troca de mensagens}
+	\label{pf_troca_mensagem}
+	\begin{tabular}{|c|c|c|c|}
+	\hline
+	\multicolumn{4}{|c|}{ Iniciar troca de mensagens}                                                                                                                                                  \\ \hline
+	\textbf{Evento disparador}                                                                                            & \textbf{Movimentos} & \textbf{Grupo de dados} & \textbf{Pontos}     \\ \hline
+	\multirow{4}{*}{\begin{tabular}[c]{@{}c@{}}Usuário deseja iniciar uma \\ troca de mensagens.\end{tabular}}           & Entry              &\begin{tabular}[c]{@{}c@{}} solicitação de troca \\ de mensagens\end{tabular}  & 1               \\ \cline{2-4} 
+																	      & Write               & Conversa(Mensagem)                & 1               \\ \cline{2-4}
+																	      & Read              & Conversa(Mendagem)                 	& 1               \\ \cline{2-4}
+																	      & Exit               & Mensagens                      	& 1               \\ \hline
+	\multicolumn{3}{|c|}{\textbf{TOTAL}}                                                                                                                      & \textbf{4}      \\ \hline
+	\end{tabular}
+	\end{table}
       \subsection{Encerrar troca de mensagens}
     
 	\begin{table}[!h]
@@ -490,14 +492,9 @@
 	\multicolumn{3}{|c|}{\textbf{TOTAL}}                                                                                                                      & \textbf{3}      \\ \hline
 	\end{tabular}
 	\end{table}
+
 	
-	
-	
-	
-	
-	
-	
-\section{Suposições e observações}
+  \section{Suposições e observações}
 
     \begin{itemize}
       
@@ -511,3 +508,9 @@
       "Visualizar histórico de mensagens" (Tabela \ref{pf_historico_mensagem})
 	
     \end{itemize}
+    
+    
+    
+ \section{Resultado da contagem}
+
+  A contagem realizada utilizando a técnica de Pontos de Função COSMIC totalizou: 107 PFC's.

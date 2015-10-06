@@ -1,6 +1,9 @@
 \chapter{Conclusão}
 
-  Esta seção apresenta as conclusões feitas com a realização das contagens, utilizando as diferentes técnicas de medição.
+  Esta seção apresenta as conclusões feitas com a realização das contagens, utilizando as diferentes técnicas de medição e as estimativas de esforço
+  para cada técnica.
+  
+  
 
   \section{Técnica de Pontos de Casos de Uso}
       
@@ -8,6 +11,12 @@
     No caso do sistema contado neste trabalho, a qualidade da documentação era bem precária, o que pode 
     ter influenciado negativamente a contagem, que pode apresentar relevante inconsistência. Em alguns casos, é difícil 
     identificar as transações inerentes a um caso de uso, o que dificulta a contagem.
+    
+    \subsection{Estimativa de Prazo}
+   
+      Como não houve nenhum fator ambiental (F1 a F6) menor que 3, o valor homems/hora considerado foi 20 (KARNER, 1993 \textit{apud} \cite{artigo_pcu}). Portanto, supondo que a equipe de desenvolvimento
+      8 horas por dia, a estimativa de esforço é 1020 homens/hora, sendo necessário 128 dias para a conclusão da implementação dos casos de uso
+      do escopo de contagem.
 	
   \section{Técnica de Pontos de Função}
     
@@ -20,10 +29,28 @@
     a forma de apresentação impacta bastante tanto na implementação quanto na visão do usuário. Por exemplo, visualizar um relatório 
     em uma tabela na tela e gerar um arquivo PDF com o mesmo relatório, são funcionalidades diferentes, em questão de implementação, 
     e, sob o ponto de vista do usuário, o relatório em PDF agrega um valor diferente, o que devia ser considerado pela técnica.
-	
+    
   \section{Técnica de Pontos de Função COSMIC}
   
     A contagem por Pontos de Função COSMIC fornece um método mais simples e intuitivo de contar o tamanho funcional do software, 
     a partir das movimentações de dados realizadas interna e externamente. Além de ser mais fácil realizar a contagem, o resultado obtido 
     representa mais intuitivamente o tamanho do software, apresentando uma quantidade aproximada das transações realizadas por este sistema.
+    
+    
+    \section{Resumo dos resultados}
+\begin{table}[!h]
+\centering
+\caption{Pontos positivos e negativos de cada técnica}
+\label{resumo_resultados}
+\begin{tabular}{llll}
+\hline
+\multicolumn{1}{|c|}{\textbf{Técnica}}                                                  & \multicolumn{1}{c|}{\textbf{Valor}} & \multicolumn{1}{c|}{\textbf{Pontos positivos}}                                                                                                        & \multicolumn{1}{c|}{\textbf{Pontos negativos}}                                                                                                                                                        \\ \hline
+\multicolumn{1}{|l|}{\begin{tabular}[c]{@{}l@{}}Pontos de\\ Caso de Uso\end{tabular}}   & \multicolumn{1}{l|}{51}             & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}- Mais simples de contar que PF\\ - Leva em conta os fatores \\    técnicos e ambientais\end{tabular}} & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}- Depende de um paradigma\\ - Depende da qualidade\\   da documentação\end{tabular}}                                                                   \\ \hline
+\multicolumn{1}{|l|}{\begin{tabular}[c]{@{}l@{}}Pontos de \\ Função\end{tabular}}       & \multicolumn{1}{l|}{132}            & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}- Mundialmente difundido\\ - Não depende de um paradigma\end{tabular}}                                 & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}- Leva um tempo maior para contar\\ - Não leva em consideração\\    a visão técnica\\ - Não tem uma boa representação\\   na visão micro\end{tabular}} \\ \hline
+\multicolumn{1}{|l|}{\begin{tabular}[c]{@{}l@{}}Pontos de\\ Função COSMIC\end{tabular}} & \multicolumn{1}{l|}{107}            & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}- Mais simples de contar\\ - Tem uma boa representação\\    na visão micro\end{tabular}}               & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}- Não leva em consideração\\    a visão técnica\end{tabular}}                                                                                          \\ \hline
+                                                                                        &                                     &                                                                                                                                                       &                                                                                                                                                                                                       \\
+                                                                                        &                                     &                                                                                                                                                       &                                                                                                                                                                                                       \\
+                                                                                        &                                     &                                                                                                                                                       &                                                                                                                                                                                                      
+\end{tabular}
+\end{table}
 	

@@ -5,4 +5,9 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.2 }
 
+\bibitem[Andrade 2005]{artigo_pcu}
+\abntrefinfo{Andrade}{ANDRADE}{2005}
+{ANDRADE, E. L.~P. de. \emph{PROCEDIMENTOS DE CONTAGEM DE PONTOS DE CASOS DE
+  USO (PCU)}. 2005.}
+
 \end{thebibliography}
