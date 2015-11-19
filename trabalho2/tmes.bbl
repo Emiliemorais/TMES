@@ -1,0 +1,18 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.2 }
+
+\bibitem[Cohn 2006]{cohn06}
+\abntrefinfo{Cohn}{COHN}{2006}
+{COHN, M. \emph{Agile estimating and planning}. [S.l.]: Pearson Education, Inc,
+  2006.
+ISBN 0-13-147941-5.}
+
+\bibitem[Schwaber e Sutherland 2013]{scrum13}
+\abntrefinfo{Schwaber e Sutherland}{SCHWABER; SUTHERLAND}{2013}
+{SCHWABER, K.; SUTHERLAND, J. \emph{Guia do Scrum}. 2013.}
+
+\end{thebibliography}
