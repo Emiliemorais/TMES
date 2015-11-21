@@ -5,6 +5,13 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.2 }
 
+\bibitem[Bhalerao e Ingle 2009]{bhalerao09}
+\abntrefinfo{Bhalerao e Ingle}{BHALERAO; INGLE}{2009}
+{BHALERAO, S.; INGLE, M. Incorporating vital factors in agile estimation
+  through algorithmic method.
+\emph{International Journal of Computer Science and Applications
+  Technomathematics Research Foundation}, v.~6, n.~1, p. 85--97, 2009.}
+
 \bibitem[Cohn 2006]{cohn06}
 \abntrefinfo{Cohn}{COHN}{2006}
 {COHN, M. \emph{Agile estimating and planning}. [S.l.]: Pearson Education, Inc,

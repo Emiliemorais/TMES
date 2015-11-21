@@ -1,0 +1,67 @@
+
+\citeonline{bhalerao09} propuseram o algoritmo CAEA como um algoritmo construtivo para estimativas ágeis,
+dividindo o processo de estimativa em duas fases onde os fatores vitais que afetam as estimativas ágeis
+estão presentes: \textit{Early Estimation} (EE) e {Iterative Estimation} (IE).
+
+A proposta da EE é identificar o escopo, prevendo requisitos que sejam suficientes para caracterizar o produto,
+e as estimativas são utilizadas para determinar a viabilidade do projeto \cite{bhalerao09}.
+A IE é uma atividade que se inicia com a iteração, para incorporar novos requisitos ou mudanças
+em requisitos anteriores \cite{bhalerao09}.
+O algoritmo pode ser aplicado em ambas as fases, à medida que a incerteza sobre os requisitos diminua \cite{bhalerao09}.
+
+Ambas as fases, EE e IE, utilizam \textit{story points} para estimar custo, prazo e duração. O CAEA considera os fatores
+vitais que influenciam nas estimativas ágeis (abordados na seção \ref{vital_factors}) para calcular os \textit{story points}
+e permitir melhores estimativas de custo, prazo e duração de um projeto \cite{bhalerao09}.
+
+  \subsection*{O Algoritmo}
+    
+    Os fatores apresentados na seção \ref{vital_factors} são classificados em três 
+    níveis de acordo com as características do projeto: \textit{Low, Medium} e \textit{High}.
+    Mas inicialmente, é estabelecida a escala na qual será mapeada a intensidade dos níveis.
+    \citeonline{bhalerao09} afirmam que é preferível utilizar como escala alguma série matemática como séries
+    quadradas($1^2$, $2^2$, $3^2$) ou uma série Fibonacci (2, 3, 5), destacando que Frederick (2007 apud \citeauthor{bhalerao09}, \citeyear{bhalerao09})
+    afirma que as séries quadradas têm se provado a melhor opção para estimativas ágeis, uma vez que fornecem níveis de acurácia 
+    realísticos para projetos complexos e mal definidos.
+    
+    Utilizando uma série quadrada para a intensidade dos níveis,
+    teríamos que \textit{Low} = 1, \textit{Medium} = 4 e \textit{High} = 9.
+    
+    Definida a escala que será utilizada, \citeonline{bhalerao09} descreveram o CAEA pelos seguintes passos:
+    
+    \begin{enumerate}
+     
+     \item Classificar os fatores nos níveis (\textit{Low, Medium} e \textit{High}), de acordo com as características do projeto.
+     
+     \item Calcular a soma das notas dos fatores, de acordo com os níveis considerados para cada um e a escala adotada.
+	   \citeonline{bhalerao09} chamam este valor de \textit{Unadjusted Value} (UV).
+	   
+     \item Decompor o projeto em pequenas histórias e atribuir uma pontuação SP, em \textit{Story Points}, para cada história.
+	
+	\subitem \textbf{\textit{OBS}}.: Este passo descreve o que geralmente é feito em projetos ágeis, decompõe-se o projeto
+		  em histórias atômicas, as quais são pontuadas com um valor em \textit{Story Points}.
+		  O algoritmo também pode ser utilizado com um valor que represente o total do \textit{backlog}, ao invés de 
+		  calcular a pontuação para cada história.
+     
+     \item Calcular o novo valor para história 
+	   (\citeonline{bhalerao09} chamam este valor de \textit{New Story Point} (NSP).) utilizando a equação:
+     
+	    $$ NSP = SP + 0.1*UV $$
+	    
+     \item Calcular o tamanho do projeto (\citeonline{bhalerao09} chamam este valor de \textit{Size Of Project} (SOP).)
+	   somando todos os NSPs, utilizando a seguinte equação:
+     
+	    $$ SOP = \sum\limits_{i=1}^{n}NSP_i $$
+	    
+	    Onde:
+	    
+	    $n$ = número de histórias que compõem o projeto;
+	    
+     \item Calcular a duração do projeto (\citeonline{bhalerao09} chamam este valor de \textit{Duration Of Project} (DOP).)
+	   utilizando a seguinte equação:
+	   
+	   $$ DOP = SOP/Velocity $$
+
+    \end{enumerate}
+    
+    Conhecendo o \textit{velocity} do time, é possível determinar a quantidade de iterações necessárias (DOP).
+    
