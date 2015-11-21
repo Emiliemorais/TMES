@@ -1,37 +1,59 @@
 \chapter{Revisão de Literatura}
 
-  \section{Metodologia ágil}
- 
-  As metodologias ágeis se baseiam nos valores ágeis publicados no Manifesto Ágil
-  (BECK, 2001 \textit{apud} \citeonline{cohn06}), que são:
+Neste capítulo é apresentado um embasamento teórico para o entendimento e justificativa de uso da técnica a ser apresentada no capítulo seguinte.
+
+\section{Conceitos da metodologia ágil}
+  Nesta seção são apresentados alguns conceitos utilizados nos métodos ágeis e que são utilizados na técnica a ser apresentada no capítulo seguinte.
+
+  \subsection{\textit{Sprint}}
+
+    Times ágeis trabalham em iterações, que são um período de tempo fixo (\textit{time-boxed}) curto, de não mais que um mês de duração. Neste tempo o time deve entregar um incremento do software. \cite{cohn06} \cite{scrum13}
+
+  \subsection{Histórias de Usuário}
+
+    Uma história de usuário consiste numa representação dos requisitos do software em relação as suas funcionalidades e são 
+    expressas geralmente no seguinte formato: \cite{cohn06}
+
+    \begin{centering}
+        
+        \textit{"Eu como <tipo do usuário>, eu desejo <ação> para <valor de negócio>"}
+    
+    \end{centering}
+
+  \subsection{\textit{Story Points}}
   
+    Em um projeto ágil que utiliza histórias de usuário, pode-se estimar o tamanho de uma história em \textit{story points}.
+
+    \textit{Story points} representam o tamanho geral de uma história, envolvendo o esforço necessário, a complexidade e os
+    riscos inerentes para desenvolver a história \cite{cohn06}. O número atribuído à história como seu tamanho não é relevante,
+    o que importa é o valor relativo entre as histórias, que é obtido por comparação entre elas \cite{cohn06}.
+
+
+\section{Abordagens de estimativas em ágeis}
+
+  \citeonline{popli14} apresentam algums tipos de abordagens para estimativas:
+
   \begin{itemize}
-   \item Indivíduos e interações entre eles mais que processos e ferramentas;
-   \item Software em funcionamento mais que documentação abrangente;
-   \item Colaboração com o cliente mais que negociação de contratos;
-   \item Responder a mudanças mais que seguir um plano.
+
+    \item Orientada ao aprendizado: Estimativa baseada na aprendizagem coletiva proveniente de experiências em estimativas anteriores e 
+    na opinião de especialistas. 
+
+    \item Baseada na opinião: Nessa abordagem um especialista compara o projeto com projetos que ele conhece.
+
+    \item Métodos de regressão: Nessa abordagem são utilizadas equações para realização das estimativas.
+
+    \item \textit{Bottom-up}: Nessa abordagem cada componente que faz parte do sistema é estimado separadamente e depois essas estimativas são agregadas para formar uma estimativa do todo.
+
   \end{itemize}
+
+  A utilização dessas abordagens podem ser vistas em alguns métodos bastante difundidos das metodologias ágeis. Um exemplo disso é a atribuição dos \textit{story points} com o uso de técnicas como o \textit{Planning Poker}, nessa técnica é utilizada a abordagem orientada ao aprendizado e a abordagem \textit{Bottom-up}.
+
+  O \textit{Velocity} é usado para medir a taxa de progresso do time, dizendo quantos pontos o time é capaz de desenvolver
+  numa \textit{sprint}, podendo ser calculado como a soma dos pontos concluídos durante a iteração \cite{cohn06}. 
   
- Seguir uma metodologia ágil em um projeto, também implica em uma abordagem ágil nas estimativas e planejamento, seguindo 
- os valores supracitados \cite{cohn06}. Conceitos importantes são necessários para entender o planejamento e estimativas
- num projeto ágil, como: iteração e \textit{sprints}, \textit{story points}, \textit{velocity}, entre outros.
- 
- 
-  \section{\textit{Sprint}}
-  
-  Times ágeis trabalham em iterações, que são um período de tempo fixo (\textit{time-boxed}) curto, de não mais que
- um mês de duração \cite{cohn06} \cite{scrum13}. O \textit{Scrum}, um \textit{framework} estrutural ágil, 
- traz o conceito de \textit{Sprint} para o processo de desenvolvimento, que nada mais é que um \textit{container} 
- temporal fixo para outros eventos do \textit{Scrum} \cite{scrum13}. Numa \textit{Sprint} é produzido um incremento 
- do \textit{software}, com base no que foi estabelecido como escopo daquela \textit{Sprint}. Como uma \textit{Sprint} possui
- a duração fixa, mesmo que uma funcionalidade não tenha sido completada nesta \textit{Sprint}, a mesma é encerrada no prazo
- que foi determinado \cite{cohn06}.
- 
- De acordo com \citeonline{scrum13}, a 
- \textit{sprint} é composta pela reunião de planejamento da \textit{sprint}, reuniões diárias, trabalho de desenvolvimento,
- revisão da \textit{sprint} e retrospectiva da \textit{sprint}. Os esforços de estimativas se concentram na reunião de
- planejamento da \textit{sprint}, onde são estimadas as histórias de usuários. No começo de cada \textit{sprint}, o time 
- incorpora todo o conhecimento obtido com a \textit{sprint} passada para adaptar e ajustar o planejamento da próxima
- \textit{sprint} \cite{cohn06}.
-  
- \section{Estimativa de tamanho da Sprint}
+  Com o tamanho do \textit{software} e o \textit{velocity} do time de desenvolvimento conhecido, fica fácil estimar um prazo para o projeto, dividindo o tamanho pelo \textit{velocity}, obtendo assim a quantidade de \textit{sprints} necessárias, e multiplicando pelo tamanho da \textit{sprint}. \cite{cohn06}
+
+  O cálculo da duração a partir do \textit{Velocity} pode ser considerada como uma estimativa através do método de regressão. Mas a duração
+  pode ser calculada também com base na opinião de especialistas utilizando assim a abordagem baseada na opinião.
+
+  Considerando tais aspectos, é possível ver que as abordagens utilizadas dependem bastante da opinião dos envolvidos no projeto.
